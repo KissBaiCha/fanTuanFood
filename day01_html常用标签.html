@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 说明文档的属性 -->
+        <title>网页标题</title>
+    </head>
+
+    <body>
+        网页正文
+        <!-- ctrl+k , ctrl+t  切换主题 -->
+        <!-- 标题标签 h1 - h6 -->
+        <h1>我是张旭</h1>
+        <h2>我是张旭</h2>
+        <h3>我是张旭</h3>
+        <h4>我是张旭</h4>
+        <h5>我是张旭</h5>
+        <h6>我是张旭</h6>
+        <!-- 段落标签 -->
+        <p>文本标签我是张旭我是张旭我是张旭我是张旭我是张旭我是张旭我是张旭我是张旭</p>
+        <!-- 少量文本修饰 -->
+        <span> 我是张旭 </span>
+        <i>斜体</i>
+        <b>加粗</b>
+        <strong>语义增强</strong>
+        <em>语义增强文本</em><br>
+        <!-- 图片超链接 -->
+        <a href="https://www.baidu.com">这是宋洋
+            <img src="images/微信图片_20220726191104.png" alt="">
+        </a><br>
+        <a href="index.html">首页</a>
+        <a href="a/test.html"> a页面</a>
+        <!-- 图片 -->
+        <img src="images/1.jpg" width="500" height="300">
+        <!-- 有序列表基本不用 -->
+        <ol>
+            <li>苹果</li>
+            <li>小米</li>
+            <li>华为</li>
+        </ol>
+        <!-- 无序列表 常用 -->
+        <ul>
+            <li>苹果</li>
+            <li>小米</li>
+            <li>华为</li>
+        </ul>
+        <!-- 表格table -->
+        <caption>中国疫情数据</caption>
+        <table border="1">
+            <tr>
+                <th>地区</th>
+                <th>确诊</th>
+                <th>治愈</th>
+                <th>详情</th>
+            </tr>
+            <tr>
+                <td>福建</td>
+                <td>5000</td>
+                <td>3120</td>
+                <td rowspan="3">暂无</td>
+            </tr>
+            <tr>
+                <td>北京</td>
+                <td colspan="2">10000</td>
+            </tr>
+            <tr>
+                <td>苏州</td>
+                <td>5000</td>
+                <td>3120</td>
+            </tr>
+        </table>
+        <!-- 表单 -->
+        <form action="服务器的url">
+            <label for="">用户名：</label><input type="text"><br>
+            <label for="">密码：</label><input type="password"><br>
+            <label for="">邮箱：</label><input type="email" placeholder="请输入邮箱"><br>
+            <label for="">性别：</label>
+            <!-- 单元按钮 name需要相同 -->
+                <input type="radio" value="m" name="gender">男
+                <input type="radio" value="f" name="gender">女
+                <br>
+            <label for="">证件类型：</label>
+                <input type="radio" value="IdCard" name="IDType" >身份证
+                <input type="radio" value="Passport" name="IDType">护照
+                <input type="radio" value="DrivingLicence" name="IDType">驾驶证<br>
+
+            <input type="submit" value="登录/注册" name="登录" ><br>
+            <label for="">毕业时间：</label>
+                <input type="date" name="" id=""><br>
+            <label for="">从事行业</label>
+            <!-- 下拉框 -->
+            <select name="" id="">
+                <option value="">--请选择--</option>
+                <option value="">农业</option>
+                <option value="">制造业</option>
+                <option value="">金融</option>
+                <option value="">IT</option>
+            </select><br>
+
+            <!-- 复选框  传递value值-->
+            <label for="">喜欢的美食类型</label>
+                <input type="checkbox" value="riliao" name="foodType">日料
+                <input type="checkbox" value="huoguo" name="foodType">火锅
+                <input type="checkbox" value="lamian" name="foodType">拉面
+                <input type="checkbox" value="chuancai" name="foodType">川菜
+        </form>
+    </body>
+</html>

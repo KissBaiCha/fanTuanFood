@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: lightcyan;
+}
+.head>div{
+    height: 100%;
+    background-color: #f60909;
+    border-right: 1px solid white;
+}
+.banner{
+    width: 90%;
+    height: 400px;
+    margin: 10px auto 0;
+    background-color: lightcyan;
+}
+.secondKill{
+    width: 90%;
+    height: 200px;
+    margin: 10px auto 0;
+    background-color: lightcyan;
+}
+.secondKill .timmer{
+    background-color: lightcyan;
+    height: 100%;
+    border-right: 1px solid white;
+    margin-top: 10px;
+}
+.hot-title{
+    width: 90%;
+    height: 60px;
+    margin: 10px auto 0;
+    background-color: lightgray;
+}
+.hot-item{
+    width: 90%;
+    height: 80px;
+    margin: 10px auto 0;
+    background-color: lightcyan;
+}
+.hot-item>div{
+    height: 100%;
+    border-right: 1px solid white;
+}

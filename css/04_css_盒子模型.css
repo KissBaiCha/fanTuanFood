@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+ }
+.head{
+    width: 100%; /*相对 父容器*/
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.navigation{
+    width: 60%;
+    height: 100%;
+    float: left;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.login_area{
+    width: 19%;
+    height: 100%;
+    float: left;
+}

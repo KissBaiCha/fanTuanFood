@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+ }
+ .d1{
+    width: 800px;
+    height: 2000px;
+    background-color: aqua;
+ }
+ .d2{
+    width: 600px;
+    height: 80px;
+    background-color: blue;
+
+ }
+ .d3{
+    width: 700px;
+    height: 150px;
+    background-color: yellow;
+    position: absolute
+ }
+ .d4{
+    width: 350px;
+    height: 180px;
+    background-color: chartreuse;
+    position: fixed;
+ }
+     /* position: absolute;
+    left: 30px; */

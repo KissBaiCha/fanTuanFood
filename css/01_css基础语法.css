@@ -1,0 +1,37 @@
+
+/* 1. 标签选择器： 对所有的该标签都有效 */
+button{
+    width: 100px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+
+
+/* 2. class 类选择器 :  该样式可以在多出使用 */
+.nav{
+    width: 150px;
+    height: 150px;
+    color: white;
+    line-height: 150px; /*行高*/
+    text-align: center;  /*文字对齐方式*/
+    border-radius: 75px;  /*圆角*/
+    background-color:cyan;
+}
+
+
+/* 3. id选择器： 样式只在一处使用 */
+#cartBtn{
+    display: block;  /*转换成块级元素*/
+    width: 132px;
+    height: 38px;
+    border:1px solid #c81623; /*边框*/
+    color: #c81623;
+    line-height: 38px; /*行高*/
+    text-align: center;  /*文字对齐方式*/
+    font-size: 12px;  /*文字大小*/
+    text-decoration: none;  /*取消下划线*/
+    font-weight: bolder; /*高亮*/
+}
+ 
