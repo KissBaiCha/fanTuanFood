@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 <div class="container">
@@ -29,34 +29,70 @@
             </div>
             <!--    登录注册页面        -->
             <div class="login-tip">
+                <!--       登录页面         -->
                 <div class="layui-tab layui-tab-card">
                     <ul class="layui-tab-title">
                         <li class="layui-this" id="login-tab">登录</li>
                         <li>注册</li>
                     </ul>
-                    <div class="layui-tab-content" style="height: 447px;">
+                    <div class="layui-tab-content" style="height: auto;">
                         <!--          提示信息              -->
-                        <span class="login-msg">密码错误</span>
+                        <span class="login-msg"></span>
 
                         <div class="layui-tab-item layui-show">
                             <!--         登录表单            -->
-                            <form class="layui-form" action="" lay-filter="example">
+                            <form class="layui-form" action="javascript:;" lay-filter="example">
                                 <!--         用户名输入框          -->
                                 <div class="layui-form-item">
-                                    <div class="layui-input-block" id="login-username-input">
-                                        <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="账号" class="layui-input">
+                                    <div class="layui-input-block login-tongYong">
+                                        <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="用户名\手机号" class="layui-input username">
                                     </div>
                                 </div>
                                 <!--         密码输入框           -->
                                 <div class="layui-form-item">
-                                    <div class="layui-input-block" id="login-password-input">
-                                        <input type="password" name="password" placeholder="密码" autocomplete="off" class="layui-input">
+                                    <div class="layui-input-block login-tongYong">
+                                        <input type="password" name="password" placeholder="密码" autocomplete="off" class="layui-input password">
                                     </div>
+                                </div>
+                                <div class="forget-password">
+                                    <a href="javascript:;">
+                                        <span class="forget-password-item">忘记密码？</span>
+                                    </a>
+                                </div>
+                                <!--         登录按钮          -->
+                                <div class="layui-form-item">
+                                    <button class=" login-btn">登录</button>
                                 </div>
                             </form>
                         </div>
-                        <div class="layui-tab-item">2</div>
-
+                        <!--           注册页面             -->
+                        <div class="layui-tab-item">
+                            <!--         注册            -->
+                            <form class="layui-form" action="javascript:;" lay-filter="example">
+                                <!--         用户名(邮箱)输入框          -->
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block login-tongYong">
+                                        <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入邮箱" class="layui-input username">
+                                    </div>
+                                </div>
+                                <!--         密码输入框           -->
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block login-tongYong">
+                                        <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input password">
+                                    </div>
+                                </div>
+                                <!--         重复密码输入框          -->
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block login-tongYong">
+                                        <input type="password" name="password" placeholder="请再次输入密码" autocomplete="off" class="layui-input password">
+                                    </div>
+                                </div>
+                                <!--         注册按钮          -->
+                                <div class="layui-form-item">
+                                    <button class="layui-btn register-bnt">注册</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
