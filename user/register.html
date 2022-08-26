@@ -11,6 +11,96 @@
     <link rel="stylesheet" href="../css/login_register/register.css">
 </head>
 <body>
+<div class="layui-row header-mini">
+    <div class="layui-col-xs12">
+        <div class="wrapper">
+            <!--     logo     -->
+            <div class="logo">
+                <a href="javascript:;" class="logo" title="~饭团网！">
+                    <img src="../images/mylogo.png" width="126" height="46">
+                </a>
+            </div>
+            <div class="login-block">
+                <!--     提示信息     -->
+                <span class="login-block-text">已有饭团账号？</span>
+                <!--     登录按钮     -->
+                <div class="layui-btn-container">
+                    <button type="button" class="layui-btn">去登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-row content">
+    <!--    左侧-->
+    <div class="layui-col-xs3 register-left">
+        <div class="left-girl">
+            <img src="../images/login_register/left.png" width="232" height="210" >
+        </div>
+    </div>
+    <div class="layui-col-xs6 register-mid">
+        <!--    注册表单    -->
+        <form class="layui-form myForm" action="javascript:;">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户名</label>
+                <div class="layui-input-block">
+                    <input id="register-username" type="text" name="username" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？"
+                           placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码</label>
+                <div class="layui-input-block">
+                    <input id="register-password" type="password" name="title" lay-verify="required" lay-reqtext="密码是必填项，岂能为空？"
+                           autocomplete="off" placeholder="请输入标题" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">确认密码</label>
+                <div class="layui-input-block">
+                    <input id="register-password-again" type="password" name="title" lay-verify="required" lay-reqtext="密码是必填项，岂能为空？"
+                           autocomplete="off" placeholder="请输入标题" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">验证手机</label>
+                    <div class="layui-input-block">
+                        <input id="register-tel" type="tel" name="phone" lay-verify="required|phone"
+                               autocomplete="off" placeholder="请输入手机号" class="layui-input demo-phone">
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-form-item ">
+                <label class="layui-form-label">验证码</label>
+                <div class="layui-input-inline register-code">
+                    <input id=""type="text" name="vercode" lay-verify="required" autocomplete="off"
+                           placeholder="短信验证码" class="layui-input">
+                </div>
+                <div class="layui-form-mid get-register-code" style="padding: 0!important;">
+                    <button type="button" class="layui-btn layui-btn-primary" lay-on="get-vercode">获取验证码</button>
+                </div>
+            </div>
+            <!--      按钮      -->
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--  右侧  -->
+    <div class="layui-col-xs3 register-right">
+        <div class="right-girl">
+            <img src="../images/login_register/right.png" width="216" height="212" >
+        </div>
+    </div>
+</div>
 
 
 <script src="../layui/layui.js"></script>
