@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>登录</title>
+    <link rel="icon" href="../images/minilogo.png">
     <script src="../js/jquery-3.6.0.min.js"></script>
-
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="../layui/css/layui.css">
@@ -19,6 +19,7 @@
                 <a href="javascript:;" class="logo" title="~饭团网！">
                     <img src="../images/mylogo.png" width="125" height="45">
                 </a>
+                <span><i>~人是铁~饭是钢~</i></span>
             </div>
         </div>
         <!-- 登录注册容器 -->
@@ -26,7 +27,7 @@
             <div class="col-md-12">
                 <!--    登录注册图片        -->
                 <div class="banner">
-                    <img src="../images/login-img480x370.jpg" width="480" height="370">
+                    <img src="../images/login_register/login-img480x370.jpg" width="480" height="370">
                 </div>
                 <!--    登录注册页面        -->
                 <div class="login-tip">
@@ -37,9 +38,9 @@
                             <li>验证码登录</li>
                         </ul>
                         <div class="layui-tab-content" style="height: auto">
-                            <!--          提示信息              -->
-                            <span class="login-msg"></span>
                             <div class="layui-tab-item layui-show">
+                                <!--          提示信息              -->
+                                <span class="login-msg"></span>
                                 <!--         登录表单            -->
                                 <form class="layui-form" action="javascript:;" lay-filter="example">
                                     <!--         用户名输入框          -->
@@ -69,7 +70,7 @@
                                     <div class="layui-form-item">
                                         <div class="signup-guide">
                                             <span>还没有账号？</span>
-                                            <a href="javascript:;">免费注册</a>
+                                            <a href="register.html">免费注册</a>
                                         </div>
                                     </div>
                                     <!--          用户协议            -->
@@ -90,7 +91,10 @@
                             <div class="layui-tab-item">
                                 <!--         验证码登录            -->
                                 <form class="layui-form" action="javascript:;" lay-filter="example">
+                                    <!--         提示信息            -->
+                                    <span class="register-msg"></span>
                                     <!--         用户手机号          -->
+
                                     <div class="layui-form-item">
                                         <div class="layui-input-block login-tongYong">
                                             <input type="text" name="username" lay-verify="title" autocomplete="off"
@@ -157,7 +161,7 @@
                 <span>|</span>
             </div>
             <div class="col-md-2">
-
+                <a href="javascript:;" title="@张旭 @刘海萍 @刘丽 @商建">@作者</a>
             </div>
         </div>
     </div>

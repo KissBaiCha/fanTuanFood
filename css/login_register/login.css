@@ -20,6 +20,9 @@ body, html {
     border-radius: 2px;
     float: left;
 }
+.layui-tab-title{
+    border-color:#a66cfd ;
+}
 /*顶部logo*/
 .head {
     display: block;
@@ -37,6 +40,13 @@ body, html {
     width: auto;
     height: 100%;
     float: left;
+}
+.head span{
+    font-size: 40px;
+    color:#a66cfd ;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 10%;
 }
 /* 登录容器*/
 .site-body{
