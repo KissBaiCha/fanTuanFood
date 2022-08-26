@@ -4,7 +4,7 @@ var arr = document.querySelectorAll("span");
 arr.forEach(element => {
     console.log(element);
 });
-
+//购物车总价计算
 var changeImg = document.querySelector(".buttonOn");
 changeImg.onclick = function () {
     document.querySelector(".myImg").src = "images/meituan.png";

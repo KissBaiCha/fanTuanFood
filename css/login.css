@@ -1,6 +1,13 @@
 body, html {
     background: #FFF;
 }
+.main{
+    max-width: 1280px;
+    margin: 0 auto 43px;
+    padding-left: 72px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
 /*顶部logo*/
 .head {
     display: block;
@@ -42,13 +49,14 @@ body, html {
     /*background-color: #a4ffd0;*/
 }
 #login-tab{
-    margin-left: 28%;
+    margin-left: 20%;
 }
 /*登录错误信息提示文字*/
-.login-tip .login-msg{
+.login-msg,.register-msg{
+    display: block;
     width: 100px;
     height: 20px;
-    font-size: 10px;
+    font-size: 12px;
     color: red;
     margin: 10px;
     line-height: 20px;
@@ -85,7 +93,7 @@ body, html {
     font-weight: bold;
 }
 /*登录按钮*/
-.login-btn {
+.login-btn,.register-bnt {
     display: inline-block;
     vertical-align: middle;
     width: 93%;
@@ -103,5 +111,16 @@ body, html {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    margin-left: 10px;
+}
+/**/
+.user-login-text{
+    width: 240px;
+    height: auto;
+    margin-left: 10px;
+    background-color: #1e9fff;
+}
+.user-text-checkbox{
+    display: block;
     margin-left: 10px;
 }
