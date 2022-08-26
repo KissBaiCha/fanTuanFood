@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="layui/css/layui.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/login_register/login.css">
 </head>
 <body>
 <div class="main">
@@ -17,7 +17,7 @@
         <div class="row head">
             <div class="col-md-12">
                 <a href="javascript:;" class="logo" title="~饭团网！">
-                    <img src="images/mylogo.png" width="125" height="45">
+                    <img src="../images/mylogo.png" width="125" height="45">
                 </a>
             </div>
         </div>
@@ -26,7 +26,7 @@
             <div class="col-md-12">
                 <!--    登录注册图片        -->
                 <div class="banner">
-                    <img src="images/login-img480x370.jpg" width="480" height="370">
+                    <img src="../images/login-img480x370.jpg" width="480" height="370">
                 </div>
                 <!--    登录注册页面        -->
                 <div class="login-tip">
@@ -65,11 +65,24 @@
                                     <div class="layui-form-item">
                                         <button class=" login-btn">登录</button>
                                     </div>
+                                    <!--          注册链接             -->
+                                    <div class="layui-form-item">
+                                        <div class="signup-guide">
+                                            <span>还没有账号？</span>
+                                            <a href="javascript:;">免费注册</a>
+                                        </div>
+                                    </div>
+                                    <!--          用户协议            -->
                                     <div class="layui-form-item" pane="">
                                         <div class="layui-input-block user-text-checkbox">
                                             <input type="checkbox" name="like1[write]" lay-skin="primary" title="">
                                         </div>
-
+                                        <div class="user-login-text">
+                                            我已阅读并同意
+                                            <a href="javascript:;">《饭团用户协议》、</a>
+                                            <a href="javascript:;">《隐私政策》</a>
+                                            ， 并授权饭团使用该饭团账号信息（如昵称、头像、收货地址）进行统一管理
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -84,16 +97,31 @@
                                                    placeholder="请输入手机号" class="layui-input userTel">
                                         </div>
                                     </div>
-                                    <!--         密码输入框           -->
-                                    <div class="layui-form-item">
-                                        <div class="layui-input-block login-tongYong">
-                                            <input type="password" name="password" placeholder="请输入验证码"
-                                                   autocomplete="off" class="layui-input register-password">
+                                    <!--         验证码输入框           -->
+                                    <div class="layui-form-item ">
+                                        <div class="login-tongYong ">
+                                            <input type="text" name="verifyCode" placeholder="请输入验证码"
+                                                   autocomplete="off" class="verifyCode layui-input">
+                                            <div class="get-verifyCode">
+                                                <span class="get-verifyCodeBtn">获取验证码</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!--         注册按钮          -->
+                                    <!--         登录按钮          -->
                                     <div class="layui-form-item">
                                         <button class="login-btn">登录</button>
+                                    </div>
+                                    <!--         用户协议        -->
+                                    <div class="layui-form-item" pane="">
+                                        <div class="layui-input-block user-text-checkbox">
+                                            <input type="checkbox" name="like1[write]" lay-skin="primary" title="">
+                                        </div>
+                                        <div class="user-login-text">
+                                            我已阅读并同意
+                                            <a href="javascript:;">《饭团用户协议》、</a>
+                                            <a href="javascript:;">《隐私政策》</a>
+                                            ， 并授权饭团使用该饭团账号信息（如昵称、头像、收货地址）进行统一管理
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -102,10 +130,39 @@
                 </div>
             </div>
         </div>
+        <!--   底部信息     -->
+        <div class="row footer-content-top">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="footer-content row ">
+            <div class="col-md-2">
+                <a href="javascript:;">关于饭团</a>
+                <span>|</span>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;">加入我们</a>
+                <span>|</span>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;">商家入驻</a>
+                <span>|</span>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;">帮助中心</a>
+                <span>|</span>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:;">手机APP</a>
+                <span>|</span>
+            </div>
+            <div class="col-md-2">
 
+            </div>
+        </div>
     </div>
 </div>
-<script src="layui/layui.js"></script>
-<script src="js/login.js"></script>
+<script src="../layui/layui.js"></script>
+<script src="../js/login_register/login.js"></script>
 </body>
 </html>
