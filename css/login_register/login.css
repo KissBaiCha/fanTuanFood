@@ -46,11 +46,11 @@ body, html {
     float: left;
 }
 .head span{
-    font-size: 40px;
+    font-size: 20px;
     color:#a66cfd ;
     text-align: center;
     line-height: 45px;
-    margin-left: 10%;
+    margin-left: 2%;
 }
 /* 登录容器*/
 .site-body{
@@ -209,7 +209,7 @@ body, html {
 }
 /*底部*/
 .footer-content{
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left: 5%;
     width: 80%;
     height: 60px;

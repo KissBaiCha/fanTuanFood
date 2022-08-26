@@ -45,11 +45,13 @@ html, body {
     margin-left: 40px;
 }
 /*登录按钮*/
-.login-block .layui-btn {
-    display: block;
+.layui-btn{
+    display: inline-block;
+    vertical-align: middle;
     height: 38px;
     line-height: 38px;
     border: 1px solid transparent;
+    padding: 0 18px;
     background-color: #a66cfd;
     color: #fff;
     white-space: nowrap;
@@ -60,7 +62,6 @@ html, body {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    float: right;
 }
 
 /*注册页面*/
@@ -129,3 +130,4 @@ html, body {
     width: 216px;
     height: 212px;
 }
+
