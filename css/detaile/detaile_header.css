@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: #00f7de;
+    border-bottom: 2px solid #a66cfd;
+    margin: 0 auto;
+}
+.header .header-tip{
+    height: 100%;
+    width: 100%;
+}
+.logo-input{
+    height:100%;
+    background-color: #761c19;
+    margin: 0 auto;
+}
+.sousuo{
+    min-height:100%;
+    background-color: #d903f8;
+    margin: 0 auto;
+}

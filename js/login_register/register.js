@@ -12,4 +12,19 @@ pwd.on({
         left.attr("src","../../images/login_register/left.png");
         right.attr("src","../../images/login_register/right.png")
     }
-},pwd)
+})
+
+// layui.use('layer', function(){
+//     var layer = layui.layer;
+//     layer.open({type: 5});
+// });
+
+layer.open({
+    type: 1,
+    content: '传入任意的文本或html', //这里content是一个普通的String
+    skin: 'demo-class'
+});
+
+
+
+
