@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>饭团美食</title>
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="layui/css/layui.css">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
     <div class="main">
@@ -17,8 +20,8 @@
                 <button>搜索</button>
             </div>
             <div class="user_inf">
-                <a href="user/login.html">登录</a>
-                <a href="user/register.html">注册</a>
+                <a href="">登录</a>
+                <a href="">注册</a>
             </div>
         </div>
 
@@ -93,8 +96,9 @@
                         <li>
                             <a href="" class="proimg"><img src="images/index-pro.webp"></a>
                             <h4><a href="">熊猫不走生日蛋糕（苏州店）</a></h4>
-                            <label><a href="">点赞预留</a></label>
-                            <a href="">
+                            <label><i></i><i></i><i></i><i></i><i></i></label>
+                            <label>5</label><label>分</label>
+                            <a href="" class="comment">
                                 <span>1234</span>
                                 <span>条评论</span>
                             </a>
@@ -105,8 +109,9 @@
                         <li>
                             <a href="" class="proimg"><img src="images/index-pro.webp"></a>
                             <h4><a href="">熊猫不走生日蛋糕（苏州店）</a></h4>
-                            <label><a href="">点赞预留</a></label>
-                            <a href="">
+                            <label><i></i><i></i><i></i><i></i><i></i></label>
+                            <label>5</label><label>分</label>
+                            <a href="" class="comment">
                                 <span>1234</span>
                                 <span>条评论</span>
                             </a>
@@ -118,20 +123,21 @@
                         <li>
                             <a href="" class="proimg"><img src="images/index-pro.webp"></a>
                             <h4><a href="">熊猫不走生日蛋糕（苏州店）</a></h4>
-                            <label><a href="">点赞预留</a></label>
-                            <a href="">
+                            <label><i></i><i></i><i></i><i></i><i></i></label>
+                            <label>5</label><label>分</label>
+                            <a href="" class="comment">
                                 <span>1234</span>
                                 <span>条评论</span>
                             </a>
                             <span class="sty"><a href="">观前街地区</a></span>
                             <span class="sty"><a href="">人均 ￥<span>141.0</span></a></span>
                             <span class="sty">推荐菜：<a href=""><span>巧克力蛋糕</span></a></span>
-                        </li>
-                        <li>
+                        </li>                        <li>
                             <a href="" class="proimg"><img src="images/index-pro.webp"></a>
                             <h4><a href="">熊猫不走生日蛋糕（苏州店）</a></h4>
-                            <label><a href="">点赞预留</a></label>
-                            <a href="">
+                            <label><i></i><i></i><i></i><i></i><i></i></label>
+                            <label>5</label><label>分</label>
+                            <a href="" class="comment">
                                 <span>1234</span>
                                 <span>条评论</span>
                             </a>
@@ -139,19 +145,33 @@
                             <span class="sty"><a href="">人均 ￥<span>141.0</span></a></span>
                             <span class="sty">推荐菜：<a href=""><span>巧克力蛋糕</span></a></span>
                         </li>
+                
                     </ul>
+
+
+                    <div class="paging">
+                        <div id="demo7"></div>
+                        <!-- <ul>
+                            <li><a href="">上一页</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">下一页</a></li>
+                        </ul> -->
+                    </div>
+
+
                 </div>
             </div>
         </div>
         <!-- 推荐区 -->
         <div class="recommend">
             <ul>
-                <h4>猜你喜欢</h4>
+                <h4>限时优惠</h4>
                 <li>
                     <a href=""><img src="images/index-pro.webp" ></a>
                     <h6><a href="">熊猫不走生日蛋糕（苏州店）</a> </h6>
                     <span><a href="">观前街地区</a></span>
                     <span><label>￥</label><label>188.0</label></span>
+                    <a href="" class="seckillbtn">立即抢购</a>
                 </li>
 
                 <li>
@@ -159,6 +179,7 @@
                     <h6><a href="">熊猫不走生日蛋糕（苏州店）</a> </h6>
                     <span><a href="">观前街地区</a></span>
                     <span><label>￥</label><label>188.0</label></span>
+                    <a href="" class="seckillbtn">立即抢购</a>
                 </li>
 
                 <li>
@@ -166,6 +187,7 @@
                     <h6><a href="">熊猫不走生日蛋糕（苏州店）</a> </h6>
                     <span><a href="">观前街地区</a></span>
                     <span><label>￥</label><label>188.0</label></span>
+                    <a href="" class="seckillbtn">立即抢购</a>
                 </li>
 
                 <li>
@@ -173,6 +195,7 @@
                     <h6><a href="">熊猫不走生日蛋糕（苏州店）</a> </h6>
                     <span><a href="">观前街地区</a></span>
                     <span><label>￥</label><label>188.0</label></span>
+                    <a href="" class="seckillbtn">立即抢购</a>
                 </li>
             </ul>
         </div>
@@ -181,3 +204,19 @@
 </html>
 
 <script src="js/index.js"></script>
+<script src="layui/layui.js"></script>
+
+<script>
+        layui.use(['laypage', 'layer'], function () {
+            var laypage = layui.laypage
+                , layer = layui.layer;
+            laypage.render({
+                elem: 'demo7'
+                , count: 100
+                , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+                , jump: function (obj) {
+                    console.log(obj)
+                }
+            });
+        })
+</script>

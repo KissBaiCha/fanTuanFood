@@ -13,9 +13,9 @@ body{
 }
 .main .header{
     width: 100%;
-    height: 100px;
+    height: 150px;
     margin-bottom: 12px;
-    background-color: antiquewhite;
+    background-color: #FFF;
 }
 
 .main .pro-main{
@@ -52,10 +52,11 @@ body{
 .header .logo{
     width: 220px;
     height: 100%;
+    margin-top: 15px;
     float: left;
 }
 .header .logo img{
-    margin: 10px;
+    margin: 20px;
     width: 200px;
     height: 75px;
 }
@@ -70,12 +71,12 @@ body{
     padding: 9px;
     border: 2px solid #a66cfd;
     outline: 0;
-    margin: 32px 0 0 55px;
+    margin: 57px 0 0 55px;
     float: left;
 }
 .header .sel_All button{
     display: block;
-    margin: 32px 0 0 15px;
+    margin: 57px 0 0 15px;
     height: 36px;
     width: 100px;
     cursor: pointer;
@@ -93,7 +94,7 @@ body{
     float: left;
 }
 .header .user_inf a{
-    margin: 30px 0 0 30px;
+    margin: 54px 0 0 28px;
     width: 100px;
     height: 36px;
     text-align: center;
@@ -128,12 +129,12 @@ body{
 }
 
 .Select a{
-    width: 80px;
+    width: 100px;
     height: 24px;
     margin-bottom: 30px;
 }
 .Condition :nth-child(11){
-    margin-left: 80px;
+    margin-left: 100px;
 }
 .Select span{
     width: 50px;
@@ -141,7 +142,7 @@ body{
 }
 .Select .fifters{
     display: block;
-    width: 80px;
+    width: 100px;
     height: 24px;
     color: gray;
     text-decoration: none;
@@ -170,6 +171,7 @@ body{
     text-decoration: none;
     text-align: center;
     font-size: 13px;
+    margin-right: 20px;
     color: #666464;
     float: left;
 }
@@ -191,11 +193,12 @@ body{
     background-color: #FFF;
 }
 .prolist .pro li:hover{
-    background-color: rgba(250, 235, 215, 0.415);
+    background-color: rgba(248, 248, 248);
 }
 .prolist .pro li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #333;
+    font-weight: normal;
 }
 .prolist .pro li a.proimg{
     display: block;
@@ -215,9 +218,19 @@ body{
     padding-bottom: 5px;
     overflow: hidden;
 }
+.prolist .pro li label i{
+    display: inline-block;
+    height: 13px;
+    width: 16px;
+    bottom: 0;
+    background-image: url(../images/index-soucang.png);
+    background-repeat: no-repeat;
+}
+.prolist .pro .comment span{
+    color: #a66cfd;
+}
 .prolist .pro li span{
     font-size: 12px;
-    color: #999;
 }
 .prolist .pro li .sty{
     display: block;
@@ -226,7 +239,22 @@ body{
 .prolist .pro li .sty a{
     color: #999;
 }
-
+/*分页*/
+.prolist .paging{
+    height: 100px;
+    margin-top: 10px;
+    background-color: #FFF;
+ }
+ .prolist .paging #demo7{
+    margin-left: 38.5px;
+    padding-top: 25px;
+ }
+ .layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background-color: #a66cfd;
+ }
+ .layui-laypage-default a:hover {
+    color:#a66cfd;
+ }
 /*========================推荐===============================*/
 .recommend li{
     width: 100%;
@@ -237,10 +265,12 @@ body{
     /* background-color: aqua; */
 }
 .recommend li:hover{
-    background-color: rgba(250, 235, 215, 0.415);
+    background-color: rgba(248, 248, 248);
 }
 .recommend ul h4{
     padding: 10px 8%;
+    font-size: 16px;
+    font-weight: bold;
     background-color: #FFF;
 }
 .recommend li img{
@@ -268,11 +298,13 @@ body{
 }
 .recommend li span{
     height: 20px;
+    width: 80px;
     overflow: hidden;   
     display: block;
     margin: 0 8%;
     font-size: 12px;
     color: #666464;
+    float: left;
 }
 .recommend li span label{
     font-size: 16px;
@@ -282,7 +314,16 @@ body{
 .recommend li span label:first-child{
     font-size: 13px;
 }
-
+.recommend li .seckillbtn{
+    width: 90px;
+    height: 30px;
+    float: right;
+    margin: -13px 8% 0 0;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: #a66cfd;
+}
 
 
 
