@@ -11,9 +11,9 @@
     background-color: #f6f6f6;
 }
 /*商品信息主体*/
-.main-shop-dish{
+.dish-details{
     min-height: 300px;
-    background-color: #1ad520;
+    background-color: #1a4ac5;
 }
 /*右侧*/
 .aside-shop-dish{
@@ -30,4 +30,18 @@
 .recommend-dish{
     margin: 20px 20px;
     background-color:red;
+}
+/*评价*/
+.dish-comment-wrap{
+    width:100%;
+    padding-top: 20px;
+    background-color: #8a6d3b;
+}
+.dish-comment-head{
+    height: 40px;
+    background-color: #5bc0de;
+}
+.dish-comment-list{
+    width: 100%;
+    background-color: #a66cfd;
 }
