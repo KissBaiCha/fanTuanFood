@@ -1,3 +1,33 @@
 .main{
     background-color: yellow;
 }
+/*详情容器*/
+.detail-shop-dish{
+    width: 100%;
+}
+/*灰色面包屑*/
+.detail-shop-dish .dish-nav{
+    height: 43px;
+    background-color: #f6f6f6;
+}
+/*商品信息主体*/
+.main-shop-dish{
+    min-height: 300px;
+    background-color: #1ad520;
+}
+/*右侧*/
+.aside-shop-dish{
+    min-height: 300px;
+    background-color: #9acfea;
+}
+/*右侧-店铺信息*/
+.shop-info-wrap{
+    height: 200px;
+    margin: 20px 20px;
+    background-color: #761c19;
+}
+/*右侧-推荐美食*/
+.recommend-dish{
+    margin: 20px 20px;
+    background-color:red;
+}
