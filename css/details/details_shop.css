@@ -60,7 +60,7 @@ body{
     display: inline-block;
     height: 14px;
     width: 16px;
-    background-image: url(../images/details-shop-soucang.png);
+    background-image: url(../../images/details-shop-soucang.png);
     background-repeat: no-repeat;
 }
 .shop-info .score label{
@@ -89,7 +89,7 @@ body{
     margin-left: 5px;
     height: 14px;
     width: 14px;
-    background-image: url(../images/shop-location-lcon.png);
+    background-image: url(../../images/shop-location-lcon.png);
 }
 
 /* 优惠促销 */
