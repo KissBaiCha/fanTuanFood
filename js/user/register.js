@@ -39,14 +39,13 @@ layer.open({
     ,btn: ['同意', '取消']
     ,btnAlign: 'c'
     ,moveType: 1 //拖拽模式，0或者1
-    ,cancel: function(index, layero){
+    ,yes: function(index, layero){
         layer.close(index);
         // return false;
     }
     ,btn2: function(index, layero){
         window.location.href = "/";
     }
-
     ,content: '<div style="padding: 50px; line-height: 22px; ' +
         'background-color: #393D49; color: #fff; font-weight: 300;">' +
         '<strong style="color: red;font-size:20px;text-align: center;margin-left: 80px">饭团用户协议！</strong><br>欢迎注册成为饭团用户!' +
@@ -55,13 +54,13 @@ layer.open({
         '<br><br> ' +
         '<a href="javascript:;" style="text-decoration: none; color: #a66cfd;">《饭团用户协议》、</a>' +
         '<a href="javascript:;" style="text-decoration: none; color: #a66cfd;">《隐私政策》</a></div>'
-    ,success: function(layero){
-        var btn = layero.find('.layui-layer-btn');
-        btn.find('.layui-layer-btn0').attr({
-            href: '/'
-            ,target: '_blank'
-        });
-    }
+    // ,success: function(layero){
+    //     var btn = layero.find('.layui-layer-btn');
+    //     btn.find('.layui-layer-btn0').attr({
+    //         href: '/'
+    //         ,target: '_blank'
+    //     });
+    // }
 });
 
 
