@@ -219,3 +219,12 @@ body{
     color: #FFF;
     text-shadow: 2px 2px 2px rgb(0 0 0 / 65%);
 }
+.detail-bottom{
+    height: 30px;
+    margin-top: 20px;
+    color: #b4acac;
+}
+.detail-bottom a{
+    color: #b4acac;
+    text-decoration: none;
+}
