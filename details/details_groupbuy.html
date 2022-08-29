@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团购详情</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/details/details_groupbuy.css">
+</head>
+<body>
+    <div class="layui-main">
+        <div class="group_product_msg">
+            <!-- ---------轮播图----------------- -->
+            <div class="layui-carousel" id="test1" lay-filter="test1">
+                <div carousel-item="">
+                <div>条目1</div>
+                <div>条目2</div>
+                <div>条目3</div>
+                <div>条目4</div>
+                <div>条目5</div>
+                </div>
+            </div> 
+            
+            <p class="product_name">黄焖鳗鱼一份</p>
+            <div class="product_price">
+                <p>
+                    <i class="pricesign1">￥</i>
+                    <span class="newprice">158</span>
+                    <i class="shop">门店价</i>
+                    <i class="pricesign2">￥</i>
+                    <span class="oldprice">200</span>
+                </p>
+            </div>
+            <!-- 评分星号 -->
+            <div class = "star" id="test9"></div>
+
+            <p class="assess">
+                <span >64</span>
+                <i>条团购评论</i>
+            </p>
+
+            <div class="startGroupBuy">
+                <input type="submit" class="submit-btn" value="发起团购">
+            </div>
+
+        </div>
+
+
+        <!-- ---------------邀请加入拼团------------------- -->
+
+        <div class="pintuan">
+            
+        </div>
+
+
+        <!-- ------------ -->
+        <script src="../layui/layui.js"></script>
+        <script src="../js/details/details_groupbuy.js"></script>
+
+
+        
+        <script>
+           layui.use(['carousel', 'form'], function(){
+                var carousel = layui.carousel
+                ,form = layui.form;
+                
+                //轮播
+                carousel.render({
+                    elem: '#test1'
+                });
+            });
+
+            layui.use(['rate'], function(){
+            var rate = layui.rate;
+              
+                //评分只读
+                rate.render({
+                    elem: '#test9'
+                    ,value: 4
+                    ,readonly: true
+                });
+            });
+
+            </script>
+
+
+    </div>
+   
+</body>
+</html>
