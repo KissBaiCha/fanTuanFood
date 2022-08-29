@@ -44,11 +44,11 @@ layer.open({
         // return false;
     }
     ,btn2: function(index, layero){
-        window.location.href = "/";
+        window.location.href = "/funTuanFood/index1.html";
     }
     ,content: '<div style="padding: 50px; line-height: 22px; ' +
         'background-color: #393D49; color: #fff; font-weight: 300;">' +
-        '<strong style="color: red;font-size:20px;text-align: center;margin-left: 80px">饭团用户协议！</strong><br>欢迎注册成为饭团用户!' +
+        '<strong style="color: red;font-size:20px;text-align: center;margin-left: 80px">饭团用户协议！</strong><br>&nbsp&nbsp欢迎注册成为饭团用户!' +
         '在您注册过程中，您需要完成我们的注册流程并通过点击同意的形式在线签署以下协议，请您务必仔细闼读、' +
         '充分理解协议中的条款内容后再点击同意（尤其是以粗体或下划线标识的条款，因为这些条款可能会明确您应履行的义务或对您的权利有所限制)。' +
         '<br><br> ' +
