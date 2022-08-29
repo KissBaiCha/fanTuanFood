@@ -3,14 +3,14 @@ pwd.on({
     focus:function (){
         var left = $(".left-girl img");
         var right = $(".right-girl img");
-        left.attr("src","../../images/login_register/left-close.png");
-        right.attr("src","../../images/login_register/right-close.png")
+        left.attr("src","../../images/user/left-close.png");
+        right.attr("src","../../images/user/right-close.png")
     },
     blur:function (){
         var left = $(".left-girl img");
         var right = $(".right-girl img");
-        left.attr("src","../../images/login_register/left.png");
-        right.attr("src","../../images/login_register/right.png")
+        left.attr("src","../../images/user/left.png");
+        right.attr("src","../../images/user/right.png")
     }
 })
 

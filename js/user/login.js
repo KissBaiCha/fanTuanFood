@@ -10,10 +10,10 @@ layui.use(['form', 'util', 'laydate'], function(){
 // function checkusername(){
 //     username = usernameElement.value;
 //     if(!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(username)){
-//         document.querySelector(".login_register-msg").innerText = "请输入正确的邮箱";
+//         document.querySelector(".user-msg").innerText = "请输入正确的邮箱";
 //         return false;
 //     }else{
-//         document.querySelector(".login_register-msg").innerText = "";
+//         document.querySelector(".user-msg").innerText = "";
 //         return true;
 //     }
 // }
