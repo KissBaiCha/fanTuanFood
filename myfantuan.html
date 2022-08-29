@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的饭团</title>
-    <link rel="stylesheet" href="css/mine/myfantuan.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/mine/myfantuan.css">
 </head>
 <body>
-    <div class="main">
+    <div class="layui-main">
+        <!-- ----------------logo+搜索------------------------- -->
         <div class="header">
-            <img src="images/mylogo.png"/>
+            <img src="../images/mylogo.png"/>
 
             <div class="searchBar">
                 <form >                 
@@ -24,6 +26,37 @@
             
         </div>
 
+        <!-- --------------我的饭团 左侧栏------------------------ -->
+        <div class="orders-container">
+          <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
+            <li class="layui-nav-item layui-nav-itemed"><a href="javascript:;">我的美团</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">我的订单</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">全部订单</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">待付款</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">待使用</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">待评价</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">抵用券</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">可用券</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">待评价</a></li>
+          </ul>
+
+          <div class="orders-body">
+            
+          </div>
+      </div>
+
+
+
+
+
+        <!-- -----------------------stop------------------------------- -->
+        <script src="../layui/layui.js"></script>
+        <script src="../js/mine/myfantuan.js"></script>
+
+
+
+        
+     
     </div>
 </body>
 </html>
