@@ -88,11 +88,60 @@ ul{
     margin: 20px 20px;
     background-color: #761c19;
 }
+.shop-info-tip{
+    height: 100%;
+}
+.shop-info-tip .shop-info-head{
+    background-color: #f6f6f6;
+    height: 45%;
+}
+.grade-item{
+    float: left;
+    width: 70%;
+    height: 50%;
+}
+/*价格*/
+.people-one-price{
+    float: left;
+    height: 50%;
+}
+#people-one-price,.people-one-price i{
+    color: #a66cfd;
+}
+
+/*商店名*/
+.shop-info-tip .shop-info-head a{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+.shop-info-tip .shop-info-head a:hover{
+    color: #a66cfd;
+}
+.shop-info-head-name{
+    display: block;
+    padding-left:10px;
+}
 /*右侧-推荐美食*/
 .recommend-dish{
     margin: 20px 20px;
     background-color:red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*评价*/
 .dish-comment-wrap{
     width:100%;
@@ -136,7 +185,7 @@ ul{
 /*评分*/
 .grade-tip{
     height: 29px;
-    background-color: #f3f3f3;
+    background-color: #f6f6f6;
     padding: 8px 10px 5px;
     margin-bottom: 15px;
     overflow: hidden;
@@ -177,13 +226,12 @@ ul{
     width: 18px;
     height: 18px;
     background: url("/images/details/perfect.svg") no-repeat;
-
 }
-
 .comment-perfect span{
     font-size: 12px;
     display: block;
     float: left;
     margin-left: 3px;
 }
+/*分页*/
 
