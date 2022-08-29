@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.layui-main .group_product_msg{
+    width: 100%;
+    height: 400px;
+    background-color: #f4f4f4;
+    position: relative;
+    float: left;
+}
+
+.group_product_msg .layui-carousel{
+    width: 600px !important;
+    height: 350px !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    float: left;
+}
+.group_product_msg .product_name{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-left: 700px;
+    margin-top: 20px;
+    float: left;
+}
+.group_product_msg .product_price{
+    width: 370px;
+    height: 60px;
+    background-color: #a66cfd;
+    margin-left: 700px;
+    margin-top: 70px;
+    border-radius: 6px;
+}
+
+.product_price p{
+   line-height: 60px;
+   color: white;
+}
+.product_price .pricesign1{
+    margin-left: 20px;
+
+}
+.product_price .shop{
+    margin-left: 5px;
+}
+
+.product_price .newprice{
+    font-size: 40px;
+}
+
+.group_product_msg .star{
+    margin-left: 720px;
+
+}
+
+.group_product_msg .assess{
+    margin-top: 1px;
+    margin-left: 724px;
+   
+}
+
+.group_product_msg .startGroupBuy{
+    width: 180px;
+    height: 60px;
+    /* background-color: #a66cfd; */
+    margin-left: 880px;
+    margin-top: 117px;
+}
+
+.startGroupBuy .submit-btn{
+    width: 100%;
+    height: 100%;
+    background-color: #a66cfd;
+    border-width: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.layui-main .pintuan{
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+    float: left;
+    margin-top: 20px;
+    
+}
+
