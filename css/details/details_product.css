@@ -13,6 +13,11 @@ ul{
 .detail-shop-dish .dish-nav{
     height: 43px;
     background-color: #f6f6f6;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.layui-breadcrumb a:hover{
+    color: #a66cfd!important;
 }
 /*商品信息主体*/
 .dish-details{
@@ -271,5 +276,12 @@ ul{
     float: left;
     margin-left: 3px;
 }
-/*分页*/
+/*虎*/
+#bodymovin{
+    width: 30px;
+    height: 30px;
+}
+.user-block{
+    display: block;
+}
 

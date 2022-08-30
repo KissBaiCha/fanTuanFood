@@ -5,6 +5,7 @@
     <title>详情</title>
     <link rel="icon" href="../images/minilogo.png">
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/details/lottie.js"></script>
     <link rel="stylesheet" href="../layui/css/layui.css">
     <link rel="stylesheet" href="../css/details/details_product.css">
     <link rel="stylesheet" href="../css/details/details_header.css">
@@ -40,7 +41,7 @@
             <!--    用户    -->
             <div class="layui-col-xs3 user-tip">
                 <div class="layui-row">
-                    <div class="layui-col-xs12 ">
+                    <div class="layui-col-xs12 user-block">
                         <ul class="layui-nav user-center">
                             <li class="layui-nav-item"><a href="">用户名</a></li>
                             <li class="layui-nav-item">
@@ -48,20 +49,30 @@
                                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
                                     <dd><a href="javascript:;">我的订单</a></dd>
                                     <dd><a href="javascript:;">我的优惠券</a></dd>
+                                    <dd><a href="javascript:;">我的收藏</a></dd>
                                     <hr>
                                     <dd><a href="javascript:;">退出</a></dd>
                                 </dl>
                             </li>
                         </ul>
+                        <div id="bodymovin">
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
     <div class="layui-row detail-shop-dish">
         <!--  灰色过度 (面包屑)  -->
         <div class="layui-col-xs12 dish-nav">
-
+            <span class="layui-breadcrumb" lay-separator=">>">
+              <a href="">首页</a>
+              <a href="">小吃</a>
+              <a href="">张家面馆</a>
+              <a><cite>张家虾仁</cite></a>
+            </span>
         </div>
     </div>
 
@@ -92,9 +103,9 @@
                         </div>
                         <!--  商品价格   -->
                         <div class="dish-price">
-                            <i>￥</i>
+                            ￥
                             <span id="dish-price">98</span>
-                            <span id="text-price">(会员提供仅供参考)</span>
+                            <span id="text-price">店铺价格:<del>168</del></span>
                         </div>
                         <!--       购买按钮        -->
                         <div class="layui-btn-container but-btn">
@@ -110,7 +121,7 @@
                 <div class="dish-comment-head">
                     <span>相关评价</span>
                     <div class="layui-btn-container appraise">
-                        <button type="button" class="layui-btn layui-btn-primary mybtn">发表评价</button>
+                        <button type="button" class="layui-btn layui-btn-primary mybtn">收藏美食</button>
                     </div>
                 </div>
                 <!--       评价list     -->
@@ -132,8 +143,8 @@
                                             <div class="grade-tip"></div>
                                         </div>
                                         <div class="layui-card-body comment-details-text">
-                                            卡片式面板面板通常用于非白色背景色的主体内<br>
-                                            从而映衬出边框投影
+                                            我靠这是什么东西我这辈子没吃过这么好吃的虾<br>
+                                            快要给我吃瞎了
                                             <!--评价图片-->
                                             <div class="shop-pictures">
                                                 <ul>
@@ -175,8 +186,8 @@
                                             <div class="grade-tip"></div>
                                         </div>
                                         <div class="layui-card-body comment-details-text">
-                                            卡片式面板面板通常用于非白色背景色的主体内<br>
-                                            从而映衬出边框投影
+                                            我靠这是什么东西我这辈子没吃过这么好吃的虾<br>
+                                            快要给我吃瞎了
                                             <!--评价图片-->
                                             <div class="shop-pictures">
                                                 <ul>
@@ -388,7 +399,7 @@
             </div>
             <div class="layui-col-xs2">
                 手机APP
-            </div>
+                </div>
             <div class="layui-col-xs2">
                 <a href="javascript:;" title="@张旭 @刘海萍 @刘丽 @商建">@作者</a>
             </div>
@@ -397,6 +408,19 @@
 </div>
 
 
+
+<script>
+    var animData = {
+        wrapper: document.getElementById('bodymovin'),
+        animType: 'svg',
+        loop: true,
+        prerender: true,
+        autoplay: true,
+        path: '/images/details/发怒虎.json'    //json动画路径
+    };
+    var anim = bodymovin.loadAnimation(animData);    //启动动画
+    bodymovin.setSubframeRendering(false);
+</script>
 <script src="../layui/layui.js"></script>
 <script src="../js/details/details_product.js"></script>
 </body>
