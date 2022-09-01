@@ -2,55 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.header{
-    display: block;
-    height:170px;
-    width: 100%;
-    margin: auto;
-    background-color: rgb(161, 154, 154);
-}
-.picbox{/*logo区*/
-    width: 100%;    
-    height: 120px; 
-    background-color: rgb(240, 119, 119);
-}
-.pic{/*logo区小框*/
-    width: 126px;
-    height: 46px; 
-    margin-left: 155px;  
-    margin-top: 73px;
-    background-color: rgb(159, 245, 62);
-}
-.pic img{
-    width: 126px;
-    height: 46px;
-}   
-.search{/*搜索区*/
-    width: 100%;
-    height: 140px; 
-    background-color: rgb(198, 29, 228);
-}
-.searchbox{/*搜索栏*/
-    width: 500px;
-    height: 50px;
-    /* background-color: #fff; */
-    margin-top: 70px;
-}
-.searchbox .searchKW{/*搜索内框文字框*/
-    margin-top: 5px;
-    height: 50px;
-    width: 100%;
-    opacity: 0.2;/*透明度*/
-    border-radius: 8px;/*圆角 */
-    border: none;/*无边框*/
-    padding-left: 40px;/*光标后移 不贴框*/
-    outline: none; /*输入框 光标聚焦 内边框 none*/
-}
-.searchwriter{/*搜索栏-推荐栏*/
-    width: 430px;
-    height: 20px;
-    background-color: rgb(223, 230, 26);    
-}
+
 .product{/*商品名称区*/
     width: 100%;
     height: 40px;
