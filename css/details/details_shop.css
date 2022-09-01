@@ -9,7 +9,6 @@ body{
 .shop-info{
     width: 70%;
     height: 260px;
-    margin-top: 12px;
     background-color: #FFF;
     float: left;
 }
@@ -17,7 +16,6 @@ body{
 .shop-img{
     width: 29%;
     height: 260px;
-    margin-top: 12px;
     float:right;  
 }
 /* 套餐 */
@@ -91,7 +89,7 @@ body{
     margin-left: 5px;
     height: 14px;
     width: 14px;
-    background-image: url(../../images/shop-location-lcon.png);
+    background-image: url(../../images/shop-location-icon.png);
 }
 
 /* 优惠促销 */
@@ -239,12 +237,12 @@ body{
 .dw{
     position: fixed;
     width: 800px; 
-    height: 500px;
+    height: 450px;
     top: 150px; 
     left: 300px; 
-    background-color: aquamarine;
     display: none;
-    
+    background-color: #FFF;
+    z-index: 3;
 }
 .dw .closemap{
     position: absolute;
@@ -253,5 +251,27 @@ body{
     display: block;
     width: 20px;
     height: 20px;
-    background-color: #a66cfd;
+    background-image: url(../../images/map-close-icon.png);
+}
+.dw .title h1{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 10px 15px;
+}
+.dw .title p{
+    height: 25px;
+    font-size: 12px;
+    margin: 10px 15px;
+    color: #333333;
+    border-bottom: 1px solid #ebebeb;
+}
+.cover{
+    background: #000;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.3;
+    z-index: 2;
+    display: none;
 }

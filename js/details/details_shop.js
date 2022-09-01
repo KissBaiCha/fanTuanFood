@@ -1,5 +1,7 @@
 document.querySelector(".dingwei").onclick=function(){
     document.querySelector(".dw").style.display = "block";
+    document.querySelector(".cover").style.display = "block";
+    document.querySelector(".cover").style.height = screen.height +'px';
 }
 
 layui.use(['carousel', 'form'], function () {
@@ -16,7 +18,12 @@ layui.use(['carousel', 'form'], function () {
 })
 var map = new AMap.Map('container', {
        
-    zoom:15, //初始化地图层级
+    zoom:18, //初始化地图层级
     center: [120.693277,31.297477] //初始化地图中心点
 });
-    
+var marker = new AMap.Marker({ 
+    map: map,
+    position: [120.693277, 31.297477],
+    icon: '../images/map-location-icon.png' ,
+    offset: new AMap.Pixel(-13, -30)
+});
