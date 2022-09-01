@@ -120,12 +120,27 @@
     background-color: #f4f4f4;
     float: left;
 }
-
-.layui-main .look{
+/* -----------------------团购推荐---------------------- */
+.layui-main .group_recommend{
     width: 270px;
     height:700px;
     background-color: #f4f4f4;
     float: left;
     margin-top: -201px;
     margin-left: 15px;
+}
+.group_recommend .text{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+}
+.group_recommend ul li{
+    width: 100%;
+    height: 200px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
 }
