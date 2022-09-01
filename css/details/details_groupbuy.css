@@ -2,13 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
-.layui-main .header{
-    width: 100%;
-    height: 150px;
-    background-color: #e67070;
-}
-
 .layui-main .group_product_msg{
     width: 100%;
     height: 400px;
