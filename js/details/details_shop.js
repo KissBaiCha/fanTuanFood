@@ -1,9 +1,10 @@
+// 点击地址显示地图div
 document.querySelector(".dingwei").onclick=function(){
-    document.querySelector(".dw").style.display = "block";
+    document.querySelector(".map").style.display = "block";
     document.querySelector(".cover").style.display = "block";
     document.querySelector(".cover").style.height = screen.height +'px';
 }
-
+// 店铺轮播图
 layui.use(['carousel', 'form'], function () {
     var carousel = layui.carousel
         , form = layui.form;
@@ -13,14 +14,13 @@ layui.use(['carousel', 'form'], function () {
         , width: '336.4px'
         , height: '260px'
     });
-    //图片轮播
-
 })
+// 店铺地图定位
 var map = new AMap.Map('container', {
-       
     zoom:18, //初始化地图层级
     center: [120.693277,31.297477] //初始化地图中心点
 });
+// 定位图标
 var marker = new AMap.Marker({ 
     map: map,
     position: [120.693277, 31.297477],

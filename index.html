@@ -14,7 +14,7 @@
 <body>
     <div class="layui-main">
         <div class="main">
-            <!-- header预留 -->
+            <!--                     头部                         -->
             <!-- <div class="header">
                 <div class="logo"><img src="images/index-logo.png"></div>
                 <div class="sel_All">
@@ -34,7 +34,7 @@
                             <img src="images/index-logo.png"  width="200" height="72">
                         </a>
                     </div>
-                    <!--    搜索    -->
+                    <!--                     搜索                         -->
                     <div class="layui-col-xs6 search-box">
                         <form class="layui-form layui-form-pane" action="">
                             <div class="layui-form-item searchbox-input">
@@ -78,7 +78,7 @@
                     </div> -->
                 </div>
             </div>
-                <!-- 筛选区 -->
+                <!--                     筛选区                         -->
                 <div class="fifter">
                     <div class="Condition">
                         <label>分类：</label>
@@ -137,7 +137,7 @@
 
 
 
-                <!-- 列表区 -->
+                <!--                     列表区                         -->
                 <div class="prolist">
                     <div class="sort">
                         <a href="">默认</a>
@@ -201,7 +201,7 @@
                     
                         </ul>
 
-
+                        <!-- 分页 -->
                         <div class="paging">
                             <div id="demo7"></div>
                             <!-- <ul>
@@ -215,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <!-- 推荐区 -->
+            <!--                     推荐区                         -->
             <div class="recommend">
                 <ul>
                     <h4>限时优惠</h4>
@@ -253,24 +253,22 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> 
+    <script src="js/index.js"></script>
+    <script src="layui/layui.js"></script>
 </body>
 </html>
-
-<script src="js/index.js"></script>
-<script src="layui/layui.js"></script>
-
 <script>
-        layui.use(['laypage', 'layer'], function () {
-            var laypage = layui.laypage
-                , layer = layui.layer;
-            laypage.render({
-                elem: 'demo7'
-                , count: 100
-                , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
-                , jump: function (obj) {
-                    console.log(obj)
-                }
-            });
-        })
+    layui.use(['laypage', 'layer'], function () {
+    var laypage = layui.laypage
+        , layer = layui.layer;
+    laypage.render({
+        elem: 'demo7'
+        , count: 100
+        , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+        , jump: function (obj) {
+            console.log(obj)
+        }
+    });
+})
 </script>
