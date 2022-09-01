@@ -1,3 +1,4 @@
+// 筛选
 function fun(a,b){
     document.querySelector(a).onclick = function(event){
         var element = event.target;
@@ -25,3 +26,4 @@ function fun(a,b){
 fun(".fifter1","fifters");
 // fun(".fifter2","fifters");
 fun(".fifter3","fifters");
+
