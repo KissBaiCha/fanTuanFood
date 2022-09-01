@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
-
+                </form>
             </div>
             <!--    用户    -->
             <div class="layui-col-xs3 user-tip">
@@ -60,16 +60,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
     <div class="layui-row detail-shop-dish">
         <!--  灰色过度 (面包屑)  -->
         <div class="layui-col-xs12 dish-nav">
-            <span class="layui-breadcrumb" lay-separator=">>">
-              <a href="">首页</a>
-              <a href="">小吃</a>
+            <span class="layui-breadcrumb" lay-separator=" >>">
+              <a href="../index1.html">首页</a>
+              <a href="">小吃快餐</a>
               <a href="">张家面馆</a>
               <a><cite>张家虾仁</cite></a>
             </span>
@@ -109,10 +107,22 @@
                         </div>
                         <!--       购买按钮        -->
                         <div class="layui-btn-container but-btn">
-                            <button type="button" class="layui-btn layui-btn-primary layui-btn-radius mybtn">点此购入
+                            <button style="float: left" type="button" class="layui-btn layui-btn-primary layui-btn-radius mybtn">点此购入
                             </button>
+                            <div id="buybuybuy"></div>
                         </div>
+
                     </div>
+                </div>
+            </div>
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="border-bottom: 2px solid #f4f4f4">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">美食详情</li>
+                    <li>备注信息</li>
+                </ul>
+                <div class="layui-tab-content" style="height: 100px;">
+                    <div class="layui-tab-item layui-show">原材料:虾仁</div>
+                    <div class="layui-tab-item">自购买起48小时内使用</div>
                 </div>
             </div>
             <!--       评价容器     -->
@@ -120,9 +130,7 @@
                 <!--       评价header     -->
                 <div class="dish-comment-head">
                     <span>相关评价</span>
-                    <div class="layui-btn-container appraise">
-                        <button type="button" class="layui-btn layui-btn-primary mybtn">收藏美食</button>
-                    </div>
+
                 </div>
                 <!--       评价list     -->
                 <div class="dish-comment-list">
@@ -258,6 +266,7 @@
                         </li>
                     </ul>
                 </div>
+                <!--    分页    -->
                 <div class="layui-row">
                     <div class="layui-col-xs3">
                         &nbsp
@@ -406,21 +415,6 @@
         </div>
     </div>
 </div>
-
-
-
-<script>
-    var animData = {
-        wrapper: document.getElementById('bodymovin'),
-        animType: 'svg',
-        loop: true,
-        prerender: true,
-        autoplay: true,
-        path: '/images/details/发怒虎.json'    //json动画路径
-    };
-    var anim = bodymovin.loadAnimation(animData);    //启动动画
-    bodymovin.setSubframeRendering(false);
-</script>
 <script src="../layui/layui.js"></script>
 <script src="../js/details/details_product.js"></script>
 </body>

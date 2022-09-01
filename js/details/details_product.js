@@ -97,3 +97,27 @@ layui.use(['laypage', 'layer'], function(){
         ,theme: '#1E9FFF'
     });
 });
+
+
+var animData = {
+    wrapper: document.getElementById('bodymovin'),
+    animType: 'svg',
+    loop: true,
+    prerender: true,
+    autoplay: true,
+    path: '/images/details/发怒虎.json'//json动画路径
+};
+var anim = bodymovin.loadAnimation(animData);    //启动动画
+bodymovin.setSubframeRendering(false);
+
+
+var buy = {
+    wrapper: document.getElementById('buybuybuy'),
+    animType: 'svg',
+    loop: true,
+    prerender: true,
+    autoplay: true,
+    path: '/images/details/buybuybuy.json'//json动画路径
+};
+var buyJson = bodymovin.loadAnimation(buy);    //启动动画
+bodymovin.setSubframeRendering(false);
