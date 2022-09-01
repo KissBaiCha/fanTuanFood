@@ -11,6 +11,14 @@
     height: 100%;
     width: 100%;
 }
+.header .layui-nav {
+    position: relative;
+    padding: 0 50px;
+    color: #fff;
+    font-size: 0;
+    box-sizing: border-box;
+    border-radius: 25px;  /*圆角*/
+}
 /*搜索*/
 .logo-input{
     display: block;
@@ -35,11 +43,10 @@
 }
 .header .user-tip{
     height: 100%;
-
 }
 .user-center{
     margin-top: 10px;
-    border-radius: 25px;  /*圆角*/
+
     background-color:#a66cfd ;
 }
 .layui-nav-bar{

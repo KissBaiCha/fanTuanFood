@@ -103,10 +103,7 @@
 .layui-nav .layui-nav-item a{
     color: rgb(49, 47, 47);
 }
-.layui-nav .layui-nav-item a:hover{
-    color: #a66cfd;
-    
-}
+
 .groupbuy_details .details-msg{
     width: 100%;
     height: 400px;
