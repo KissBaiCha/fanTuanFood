@@ -8,13 +8,14 @@
     <link rel="icon" href="images/minilogo.png">
     <link rel="stylesheet" href="layui/css/layui.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/details/details_header.css">
 
 </head>
 <body>
     <div class="layui-main">
         <div class="main">
             <!-- header预留 -->
-            <div class="header">
+            <!-- <div class="header">
                 <div class="logo"><img src="images/index-logo.png"></div>
                 <div class="sel_All">
                     <input type="text">
@@ -24,8 +25,59 @@
                     <a href="">登录</a>
                     <a href="">注册</a>
                 </div>
-            </div>
+            </div> -->
+            <div class="header">
+                <div class="layui-row header-tip">
+                    <!--      logo      -->
+                    <div class="layui-col-xs3 logo-input">
+                        <a href="index1.html" title="饭团网" class="logo-img">
+                            <img src="images/index-logo.png"  width="200" height="72">
+                        </a>
+                    </div>
+                    <!--    搜索    -->
+                    <div class="layui-col-xs6 search-box">
+                        <form class="layui-form layui-form-pane" action="">
+                            <div class="layui-form-item searchbox-input">
+                                <div class="layui-input-block" style="margin-left: 10px">
+                                    <input style="border: 2px solid #a66cfd;width: 80%;display: block;float: left" type="text" name="title" autocomplete="off"
+                                           placeholder="点此进入美食猩球" class="layui-input">
+                                    <div class="layui-btn-container" style="display: block;float: left">
+                                        <button type="button" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger search-btn">去觅食</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><div class="layui-btn-container" style="margin: 24px 10px 0 120px;display: block;float: left">
+                        <button type="button" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger search-btn">登录</button>
+                    </div>
+                    <div class="layui-btn-container" style="margin-top: 24px;display: block;float: left">
+                        <button type="button" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger search-btn">注册</button>
+                    </div>
 
+                    <!--    用户    -->
+                    <!-- <div class="layui-col-xs3 user-tip">
+                        <div class="layui-row">
+                            <div class="layui-col-xs12 user-block">
+                                <ul class="layui-nav user-center">
+                                    <li class="layui-nav-item"><a href="">用户名</a></li>
+                                    <li class="layui-nav-item">
+                                        <a href="javascript:;">我的饭团</a>
+                                        <dl class="layui-nav-child"> 
+                                            <dd><a href="javascript:;">我的订单</a></dd>
+                                            <dd><a href="javascript:;">我的优惠券</a></dd>
+                                            <dd><a href="javascript:;">我的收藏</a></dd>
+                                            <hr>
+                                            <dd><a href="javascript:;">退出</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <div id="bodymovin">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
                 <!-- 筛选区 -->
                 <div class="fifter">
                     <div class="Condition">
@@ -95,8 +147,8 @@
                     <div class="pro">
                         <ul>
                             <li>
-                                <a href="" class="proimg"><img src="images/index-pro.webp"></a>
-                                <h4><a href="">熊猫不走生日蛋糕（苏州店）</a></h4>
+                                <a href="details/details_shop.html" class="proimg"><img src="images/index-pro.webp"></a>
+                                <h4><a href="details/details_shop.html">熊猫不走生日蛋糕（苏州店）</a></h4>
                                 <label><i></i><i></i><i></i><i></i><i></i></label>
                                 <label>5</label><label>分</label>
                                 <a href="" class="comment">

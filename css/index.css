@@ -11,12 +11,12 @@ body{
     margin: 0 auto;
     /* background-color: aqua; */
 }
-.main .header{
+/* .main .header{
     width: 100%;
     height: 150px;
     margin-bottom: 12px;
     background-color: #FFF;
-}
+} */
 
 .main .pro-main{
     width: 79%;
@@ -49,7 +49,7 @@ body{
 }
 /*布局end*/
 /*=========================头部===============================*/
-.header .logo{
+/* .header .logo{
     width: 220px;
     height: 100%;
     margin-top: 15px;
@@ -105,7 +105,7 @@ body{
     color: #fff;
     font-size: 16px;
     float: left;
-}
+} */
 /*=========================筛选===============================*/
 .fifter .Condition{
     width: 95%;
