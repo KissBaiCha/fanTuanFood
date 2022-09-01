@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下单页面</title>
+    <link rel="stylesheet" href="/css/customer/order/order.css">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+
+</head>
+<body>
+    <header class="layui-main">
+        <div class="layui-row header">
+            <!--=======  logo区  ======-->
+            <div class="layui-col-xs3 picbox">
+                <div class="pic">
+                        <img src="/images/mylogo.png" alt="">
+                </div>
+            </div>
+             <!--=======  搜索区  ======-->
+            <div class="layui-col-xs6 search">
+              <div class="searchbox">
+                <form><!-- 表单-->
+                  <input type="text" class="searchKW">
+                  <a href="" class="searchBtn">
+                      <span class="searchImg"></span>
+                  </a>
+              </form>
+              </div>
+              <div class="searchwriter">
+                <span>修猫 修狗 猫咖 狗咖 美食 甜品</span>
+              </div>
+            </div>
+            <div class="layui-col-xs3">
+              
+            </div>
+          </div>
+           <!--=======  商品名称区  ======-->
+          <div class="product">
+            <div class="layui-row">
+                <div class="layui-col-xs6 pro-row-item">
+                  <div class="pro-itemname">
+                    <p>项目</p>
+                  </div>
+                </div>
+                <div class="layui-col-xs2 pro-row-price">
+                  <div class="pro-pricename">
+                    <p>单价</p>
+                </div>
+                </div>
+                <div class="layui-col-xs2 pro-row-number">
+                  <div class="pro-numname">
+                    <p>数量</p>
+                </div>
+                </div>
+                <div class="layui-col-xs2 pro-row-sum" >
+                <div class="pro-sumname">
+                    <p>总价</p>
+                </div>
+                </div>
+              </div>
+          </div>
+          <!--=======  商品详情区  ======-->
+          <div class="Pro-details">
+            <div class="layui-row">
+                <div class="layui-col-xs6  pro-shop">
+                  <div class="shop-name">
+                    <input type="checkbox" class="select-product" checked/>
+                   <a href="">猫腻·猫咖·撸猫馆: 猫腻·猫咖·撸猫馆单人餐</a> </div>
+                </div>
+                <div class="layui-col-xs2 ">
+                  <div class="grid-demo">按钮
+                            <a href="javascript:void(0)" class="count-symbol subtraction">-</a>
+                            <input type="text" class="count" value="1" readonly>
+                            <a href="javascript:void(0)" class="count-symbol addBtn">+</a>
+                  </div>
+                </div>
+                <div class="layui-col-xs2">
+                  <div class="number-price">￥58</div>
+                </div>
+                <div class="layui-col-xs2">
+                  <div class="sum-price">￥58</div>
+                </div>
+              </div>
+          </div>
+          <!--=======  结算区  ======-->
+          <div class="settlement">
+            <div class="layui-row">
+                <div class="layui-col-xs6">
+                  <div class="grid-demo grid-demo-bg1">3/12</div>
+                </div>
+                <div class="layui-col-xs2">
+                  <div class="grid-demo">3/12</div>
+                </div>
+                <div class="layui-col-xs2">
+                  <div class="grid-demo grid-demo-bg1">3/12</div>
+                </div>
+                <div class="layui-col-xs2">
+                  <div class="set-but">应付金额：</div>
+                </div>
+              </div>
+          </div>
+          <!--=======  提交订单区  ======-->
+          <div class="Submit-order">
+            <div class="layui-row">
+                <div class="layui-col-xs10">
+                  <div class="grid-demo grid-demo-bg1">10/12</div>
+                </div>
+                <div class="layui-col-xs2">
+                  <div class="sub-but">提交订单</div>
+                </div>
+              </div>
+          </div>
+    </header>
+    <script src="../layui/layui.js"></script>
+</body>
+</html>
