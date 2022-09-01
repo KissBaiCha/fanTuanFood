@@ -22,9 +22,24 @@
     font-weight: 700;
     opacity: 0.8;/*透明度*/
 }
-
-
-
+.grid-demo{
+    width: 100px;
+    height: 50px;
+    /* background-color: rgb(236, 123, 123); */
+}
+.count{
+    width: 30px;
+    height: 20px;
+    float: left;
+}
+.count-symbol{/*加减号*/
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    border: 1px solid gray;
+}
 .Pro-details{/*商品详情信息区*/
     width: 100%;
     height: 120px;
@@ -44,7 +59,15 @@
 .set-but{/*应付金额按钮*/
     width: 120px;
     height: 40px;
-    background-color: rgb(22, 158, 231);
+    /* border-radius: 10px; */
+    text-align: center;
+    /* background-color: rgb(80, 130, 249); */
+}
+.set-but span{
+    color: black;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bolder;
 }
 .Submit-order{/*提交订单按钮大区*/
     width: 100%;
@@ -55,5 +78,13 @@
 .sub-but{/*提交订单按钮*/
     width: 120px;
     height: 40px;
-    background-color: rgb(51, 57, 236);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(94, 99, 238);
+}
+.sub-but span{
+    color: black;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bolder;
 }
