@@ -2,38 +2,60 @@
     margin: 0;
     padding: 0;
 }
-.header{/*评价商品区*/
-    width: 75%;
-    height: 200px;
-    display: block;
-    margin-right: 50px;
-    margin-top: 50px;
-    background-color: rgb(229, 244, 64);
-}
+
 .orderpic{
-    width: 200px;
-    height: 180px;
-    background-color: rgb(132, 236, 29);
+    width:100%;
+    height: 200px;
+    margin-top: 20px;
+    /* background-color: rgb(132, 236, 29); */
+}
+.orderpic img{
+    width:95%;
+    height: 200px;
 }
 .ordermsg{
     width: 640px;
-    height: 180px;
-    margin-top: 10px;
-    background-color: rgb(61, 247, 238);
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 10px  rgb(229, 174, 247) ;
+    /* background-color: rgb(61, 247, 238); */
 }
 .name{
     width: 300px;
     height: 50px;
-    background-color: rgb(0, 140, 255);
+    margin-left: 20px;
+    /* background-color: rgb(0, 140, 255); */
 }
 .name span{
     font-size: 26px;
     font-weight: 37px;
 }
+.score{
+    width: 600px;
+    height: 30px;
+    margin-left: 20px;
+    border-bottom: 1px solid gray;
+}
+.score span{
+    font-size: 15px;
+
+}
+.address{
+    width: 600px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-bottom: 1px solid gray;
+    /* background-color: rgb(226, 73, 73); */
+}
+.address p{
+    font-size: 16px;
+}
 .recommend{
     width: 380px;
     height: 500px;
-    margin-left: 250px;
+    margin-left:70px;
     background-color: rgb(241, 73, 73);
 }
 .recom{
@@ -66,9 +88,9 @@
 }
 .UEditor{
     float: left;
-    width: 100%;
+    width: 80%;
     height: 350px;
     margin-right: 50px;
     margin-top: -250px;
-    background-color: rgb(56, 99, 238);
+    background-color: rgb(101, 132, 233);
 }

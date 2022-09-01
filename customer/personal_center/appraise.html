@@ -1,61 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>评价页面</title>
-    <link rel="stylesheet" href="/css/customer/personal_center/appraise.css">
-    <link rel="stylesheet" href="/layui/css/layui.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>评价页面</title>
+  <link rel="stylesheet" href="../../css/customer/personal_center/appraise.css">
+  <link rel="stylesheet" href="../../layui/css/layui.css">
+  <link rel="stylesheet" href="../../css/details/details_header.css">
 </head>
+
 <body>
-    <header class="layui-main">
-        <div class="layui-row header"><!-- 商品订单评价区-->
-            <div class="layui-col-xs3">
-              <div class="orderpic">3/12<!-- 商品图片-->
-                <img src="/images/customer/personal_center/orderpic.png" alt="" class="opic">
+  <div class="layui-main">
+    <div class="header">
+      <div class="layui-row header-tip">
+        <!--      logo      -->
+        <div class="layui-col-xs3 logo-input">
+          <a href="../../index.html" title="饭团网" class="logo-img">
+            <img src="../../images/mylogo.png" width="200" height="72">
+          </a>
+        </div>
+        <!--    搜索    -->
+        <div class="layui-col-xs6 search-box">
+          <form class="layui-form layui-form-pane" action="">
+            <div class="layui-form-item searchbox-input">
+              <div class="layui-input-block" style="margin-left: 10px">
+                <input style="border: 2px solid #a66cfd;width: 80%;display: block;float: left" type="text" name="title"
+                  autocomplete="off" placeholder="点此进入美食猩球" class="layui-input">
+                <div class="layui-btn-container" style="display: block;float: left">
+                  <button type="button"
+                    class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger search-btn">去觅食</button>
+                </div>
               </div>
             </div>
-            <div class="layui-col-xs6">
-              <div class="ordermsg">
-                <div class="name"> 
-                  <span>猫腻·猫咖·撸猫馆</span> 
-                </div>
-                <div class="score clear">
-                  <img src="" alt="">
-                  <span>5分人均￥58</span>
-                </div>
-              </div><!-- 商品信息-->
-            </div>
-            <div class="layui-col-xs3">
-              <div class="recommend"><!-- 右栏附件商品推荐区-->
-                <div class="title">推荐附件商品</div>
-                <div class="layui-row recom"><!-- 商品一区-->
-                    <div class="layui-col-md5">
-                      <div class="layui-row grid-demo">
-                        <div class="layui-col-md3 ">
-                          <div class="recom-pic">内部列</div>
-                        </div>
-                        <div class="layui-col-md9">
-                          <div class="recom-msg">内部列
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          </form>
+        </div>
+        <!--    用户    -->
+        <div class="layui-col-xs3 user-tip">
+          <div class="layui-row">
+            <div class="layui-col-xs12 user-block">
+              <ul class="layui-nav user-center">
+                <li class="layui-nav-item"><a href="">用户名</a></li>
+                <li class="layui-nav-item">
+                  <a href="javascript:;">我的饭团</a>
+                  <dl class="layui-nav-child">
+                    <!-- 二级菜单 -->
+                    <dd><a href="javascript:;">我的订单</a></dd>
+                    <dd><a href="javascript:;">我的优惠券</a></dd>
+                    <dd><a href="javascript:;">我的收藏</a></dd>
+                    <hr>
+                    <dd><a href="javascript:;">退出</a></dd>
+                  </dl>
+                </li>
+              </ul>
+              <div id="bodymovin">
               </div>
-              <div class="layui-row recom"><!-- 商品二区-->
-                <div class="layui-col-md5">
-                  <div class="layui-row grid-demo">
-                    <div class="layui-col-md3 ">
-                      <div class="recom-pic">内部列</div>
-                    </div>
-                    <div class="layui-col-md9">
-                      <div class="recom-msg">内部列</div>
-                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="layui-row ">
+      <!-- 商品订单评价区-->
+      <div class="layui-col-xs3">
+        <div class="orderpic">
+          <!-- 商品图片-->
+          <img src="../../images/customer/personal_center/orderpic.png" alt="" class="opic">
+        </div>
+      </div>
+      <div class="layui-col-xs6">
+        <div class="ordermsg">
+          <div class="name">
+            <span>猫腻·猫咖·撸猫馆</span>
+          </div>
+          <div class="score clear">
+            <img src="../../images/customer/personal_center/star.png" alt="">
+            <span>5分人均￥58</span>
+          </div>
+          <div class="address">
+            <p>地址：姑苏区观前街177-179号二楼（察院场地铁二号口直行两百米，海澜之家对面）</p>
+            <p>电话：18013126105</p>
+            <p>营业时间：周一至周日 10:00-22:00</p>
+          </div>
+        </div><!-- 商品信息-->
+      </div>
+      <div class="layui-col-xs3">
+        <div class="recommend">
+          <!-- 右栏附件商品推荐区-->
+          <div class="title">推荐附件商品</div>
+          <div class="layui-row recom">
+            <!-- 商品一区-->
+            <div class="layui-col-md5">
+              <div class="layui-row grid-demo">
+                <div class="layui-col-md3 ">
+                  <div class="recom-pic">内部列</div>
+                </div>
+                <div class="layui-col-md9">
+                  <div class="recom-msg">内部列
                   </div>
                 </div>
+              </div>
+            </div>
           </div>
-          <div class="layui-row recom"><!-- 商品三区-->
+          <div class="layui-row recom">
+            <!-- 商品二区-->
             <div class="layui-col-md5">
               <div class="layui-row grid-demo">
                 <div class="layui-col-md3 ">
@@ -66,18 +119,34 @@
                 </div>
               </div>
             </div>
-      </div>
-            </div>
           </div>
-          <div class="layui-row UEditor"><!-- UEditor 富文本编辑框-->
-            <div class="layui-col-xs12">
-              <div class="ditor1">12/12<!-- UEditor-->
-
+          <div class="layui-row recom">
+            <!-- 商品三区-->
+            <div class="layui-col-md5">
+              <div class="layui-row grid-demo">
+                <div class="layui-col-md3 ">
+                  <div class="recom-pic">内部列</div>
+                </div>
+                <div class="layui-col-md9">
+                  <div class="recom-msg">内部列</div>
+                </div>
               </div>
             </div>
-           
           </div>
-    </header>
-    <script src="../layui/layui.js"></script>
+        </div>
+      </div>
+      <div class="layui-row UEditor">
+        <!-- UEditor 富文本编辑框-->
+        <div class="layui-col-xs12">
+          <div class="ditor1">12/12
+            <!-- UEditor-->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="../../layui/layui.js"></script>
 </body>
+
 </html>
