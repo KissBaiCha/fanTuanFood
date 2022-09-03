@@ -83,7 +83,16 @@
                 <div class="dish-pictures-area">
                     <!--    详情bigImg     -->
                     <div class="picture-preview">
-                        <img src="/images/details/dish.jpg" width="220px" height="220px">
+                        <div class="layui-carousel" id="img-list" lay-filter="test4">
+                            <div carousel-item="">
+                                <div><img src="../images/details/dish.jpg"></div>
+                                <div><img src="../images/details/dish.jpg"></div>
+                                <div><img src="../images/details/dish.jpg"></div>
+                                <div><img src="../images/details/dish.jpg"></div>
+                                <div><img src="../images/details/dish.jpg"></div>
+                            </div>
+                        </div>
+<!--                        <img src="/images/details/dish.jpg" width="220px" height="220px">-->
                     </div>
                     <!--    详情ImgList     -->
                     <div class="picture-list">
@@ -417,5 +426,17 @@
 </div>
 <script src="../layui/layui.js"></script>
 <script src="../js/details/details_product.js"></script>
+<script>
+    layui.use(['carousel', 'form'], function () {
+        var carousel = layui.carousel
+            , form = layui.form;
+
+        var ins3 = carousel.render({
+            elem: '#img-list'
+            , width: '220px'
+            , height: '220px'
+        });
+    })
+</script>
 </body>
 </html>
