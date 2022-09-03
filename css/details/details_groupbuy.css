@@ -113,6 +113,9 @@
     float: left;
     margin-top: 15px;
 }
+.groupbuy_details .layui-tab .layui-tab-title li:hover{
+    color: #a66cfd;
+}
 
 .groupbuy_details .details-msg{
     width: 100%;
@@ -126,6 +129,7 @@
     margin-left: 35px;
 
 }
+
 .layui-table tr th,td{
     text-align: center;
 
@@ -145,10 +149,26 @@
 .layui-tab-content .layui-tab-item .groupbuy-mustknow{
     width: 840px;
     height: 300px;
-    background-color: bisque;
+    /* background-color: bisque; */
     margin-left: 35px;
     margin-top: 30px;
+
 }
+.groupbuy-mustknow .listtitle{
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    
+}
+.groupbuy-mustknow .list_maohao{
+    font-weight: bolder;
+    margin-left: 3px;
+}
+
+.groupbuy-mustknow .listtext1,.listtext2,.listtext3,.listtext4{
+    margin-left: 80px;
+}
+
 
 
 /* -----------------------团购推荐---------------------- */
