@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .layui-main .group_product_msg{
     width: 100%;
     height: 400px;
@@ -11,6 +12,7 @@
     margin-top: 15px;
 }
 
+/* --------------轮播图--------------------------- */
 .group_product_msg .layui-carousel{
     width: 600px !important;
     height: 350px !important;
@@ -18,6 +20,11 @@
     margin-left: 20px;
     position: absolute;
     float: left;
+}
+.layui-carousel img{
+    width: 600px;
+    height: 350px;
+
 }
 .group_product_msg .product_name{
     font-size: 24px;
@@ -81,35 +88,69 @@
     font-size: 20px;
 }
 
+/* ----------------------邀请加入拼团----------------------------- */
 .layui-main .pintuan{
     width: 75%;
     height: 200px;
     background-color: #f4f4f4;
     float: left;
     margin-top: 20px;
-    
+}
+.pintuan .group1,.group2{
+    width: 840px;
+    height: 80px;
+    background-color: bisque;
+    margin-top: 10px;
+    margin-left: 18px;
 }
 
+
+
+/* --------------------------团购详情、购买须知---------------------------------------- */
 .layui-main .groupbuy_details{
     width: 75%;
     height: 400px;
     float: left;
     margin-top: 15px;
 }
-.groupbuy_details .layui-nav{
-    background-color: #f4f4f4;
-   
-}
-.layui-nav .layui-nav-item a{
-    color: rgb(49, 47, 47);
-}
 
 .groupbuy_details .details-msg{
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #f4f4f4;
     float: left;
 }
+.layui-form .layui-table{
+    width: 800px;
+    margin-top: 30px;
+    margin-left: 35px;
+
+}
+.layui-table tr th,td{
+    text-align: center;
+
+}
+
+.layui-form .groupbuy-text{
+    width: 800px;
+    height: 200px;
+    /* background-color: #ead294; */
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.groupbuy-text .eattime{
+    font-weight: bolder;
+}
+
+.layui-tab-content .layui-tab-item .groupbuy-mustknow{
+    width: 840px;
+    height: 300px;
+    background-color: bisque;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+
 /* -----------------------团购推荐---------------------- */
 .layui-main .group_recommend{
     width: 270px;
@@ -122,7 +163,7 @@
 .group_recommend .text{
     width: 100%;
     height: 50px;
-    background-color: aqua;
+    /* background-color: aqua; */
     line-height: 50px;
     text-align: center;
     font-size: 15px;
@@ -130,7 +171,50 @@
 }
 .group_recommend ul li{
     width: 100%;
-    height: 200px;
-    background-color: antiquewhite;
+    height: 235px;
+    /* background-color: antiquewhite; */
     margin-bottom: 10px;
+    position: relative;
+}
+ul .look-pro-img{
+    width: 100%;
+    height: 190px;
+    /* background-color: #e67070; */
+    float: left;
+}
+
+.look-pro-img img{
+    width: 240px;
+    height: 190px;
+    float: left;
+    margin-left: 16px;
+
+}
+li .look-pro-msg {
+    display: block;
+    width: 100%;
+    height: 25px;
+    /* background-color: chartreuse; */
+    float: left;
+    position: relative;
+}
+li .look-pro-msg span{
+    color: grey;
+    padding-left: 16px;
+}
+li .look-pro-price{
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 16px;
+}
+/* -----------------底部----------------------- */
+.detail-bottom{
+    height: 30px;
+    margin-top: 200px;
+    color: #b4acac;
+
+}
+.detail-bottom a{
+    color: #b4acac;
+    text-decoration: none;
 }
