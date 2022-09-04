@@ -80,10 +80,11 @@
 }
 .comm{/*  li  */
     width: 90%;
-    height: 350px;
+    height: 360px;
     margin: auto;
     margin-top: 10px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    background-color: #f4f4f4;
 
     /* background-color: blueviolet; */
 }
@@ -91,7 +92,9 @@
     width:90%;
     height: 50%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 12px;
+    float: left;
     /* background-color: #fff; */
 }
 .comm-pic img{
@@ -109,7 +112,7 @@
     margin-top: 10px;
     margin-left: 10px;
     float: left;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .price{/*  价格区  */
     width: 100%;
@@ -160,7 +163,7 @@
 }
 .s-but span{
     display: block;
-    padding-left: 10px;
+    padding-left: 7px;
     padding-top: 10px;
 }
 .s-percent{/*  抢购区百分比  */
