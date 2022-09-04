@@ -98,7 +98,22 @@ body{
     width: 14px;
     background-image: url(../../images/shop-location-icon.png);
 }
-
+.shop-info .collect{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 20px ;
+    float: right;
+}
+.shop-info .collect i{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image:url(../../images/details/collect-a.png);
+}
+.shop-info .collect:hover i{
+    background-image:url(../../images/details/collect-b.png);
+}
 /* 优惠促销 */
 .set-meal h1{
     font-size: 16px;

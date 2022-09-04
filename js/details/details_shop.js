@@ -4,6 +4,9 @@ document.querySelector(".dingwei").onclick=function(){
     document.querySelector(".cover").style.display = "block";
     document.querySelector(".cover").style.height = screen.height +'px';
 }
+document.querySelector(".collect").onclick=function(){
+    document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/collect-c.png)";
+}
 // 店铺轮播图
 layui.use(['carousel', 'form'], function () {
     var carousel = layui.carousel
