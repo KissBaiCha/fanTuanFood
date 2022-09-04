@@ -14,119 +14,178 @@
     height: 200px;
 }
 .ordermsg{/*商品信息*/
-    width: 640px;
+    width:100%;
     height: 200px;
     margin-top: 20px;
     border-radius: 6px;
+    overflow: hidden;
     box-shadow: 0 0 20px 10px  rgb(229, 174, 247) ;
-    /* background-color: rgb(61, 247, 238); */
+    background-color: rgb(61, 247, 238);
 }
 .name{/*商品名字*/
     width: 300px;
     height: 50px;
     margin-left: 20px;
-    /* background-color: rgb(0, 140, 255); */
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    background-color: rgb(76, 241, 58);
 }
 .name span{
     font-size: 26px;
     font-weight: 37px;
 }
-.score{/*商品评分*/
-    width: 600px;
+.score{/*商品评分区*/
+    width: 250px;
     height: 30px;
+    background-color: #fff;
+}
+.o-cont{/*星星区*/
+    width: 120px;
+    height: 30px;
+    background-color: rgb(149, 222, 13);
+}
+.o-star{/*星星*/
+    width: 200px;
+    height: 30px;
+    margin-top: -40px;
+}
+.score span{/*商品人均消费区*/
+    display: block;
+    float: left;
+    width: 80px;
+    height: 20px;
+    margin-left: 130px;
+    margin-top: -25px;
+    background-color: rgb(13, 39, 231);
+}
+.score span{/*商品人均消费区 文字*/
+    font-size: 14px;
+    font-weight: bolder;
+}
+.order-aps{/*下单商品名称区*/
     margin-left: 20px;
-    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    background-color: rgb(230, 25, 216);
 }
-.score span{
-    font-size: 15px;
-
+.order-aps span{/*下单商品名称区 文字*/
+    font-size: 16px;
 }
-.address{/*商品地址*/
-    width: 600px;
-    height: 90px;
+.order-score{/*商品评分*/
+    width: 100%;
     margin-top: 10px;
     margin-left: 20px;
     border-bottom: 1px solid gray;
-    /* background-color: rgb(226, 73, 73); */
-}
-.address p{
-    font-size: 14px;
+    background-color: rgb(226, 73, 73);
 }
 .recommend{/*附近推荐区*/
-    width: 380px;
-    height: 500px;
-    margin-left:70px;
-    box-shadow:  0 0 10px 5px rgb(181, 179, 179);
-    /* background-color: rgb(241, 73, 73); */
-}
-.recom{/*推荐商品区*/
-    width:380px;
-    height: 130px;
-    margin-bottom: 20px;
-    /* background-color: rgb(94, 62, 238); */
+    width: 90%;
+    margin-left: 10px;
+    margin-top: -200px;
+    float: left;
+    box-shadow:  0 0 10px 1px rgb(181, 179, 179);
+    background-color: rgb(241, 73, 73);
 }
 .title{/*附近推荐 标题区*/
-    width: 270px;
+    width: 240px;
     height: 40px;
-    margin-top:30px;
+    margin-top:10px;
     margin-left: 10px;
-    /* background-color: rgb(238, 238, 60); */
+    background-color: rgb(238, 238, 60);
 }
-.title span{
+.title span{/*附近推荐 标题区 文字*/
     font-weight: bolder;
     font-size: 18px;
-    
 }
-.recom-pic{/*商品图片区*/
-    width: 150px;
-    height:110px;
-    /* background-color: rgb(15, 220, 26); */
+
+.recom{/*推荐商品区*/
+    width:100%;
+    height: 280px;   
+    margin-bottom: 20px;
+    border: 1px solid #a66cfd;
+    background-color: rgb(94, 62, 238);
 }
-.recom-pic img{
-    display: block;
-    width: 150px;
-    height:110px;
+.recom-pic {
+    margin-left: 20px;
+    margin-top: 20px;
 }
-.opic{
-    display: block;
-    width: 200px;
-    height:180px;
+.recom-msg{/* 推荐商品 店名、评分、人均消费 信息区*/
+    width: 100%;
+    background-color: rgb(17, 236, 21);
 }
-.recom-msg{/*商品信息区*/
-    width: 240px;
-    height:110px;
-    margin-left: 80px;
-    /* background-color: rgb(198, 81, 237); */
+.info{/* 推荐商品 店名*/
+    width: 90%;
+    float: left;
+    background-color: rgb(230, 53, 53);
 }
-.info{/*推荐区店名*/
-    width: 220px;
-    height: 50px;
-    margin-left: 5px;
-    background-color: #fff;
-}
-.info span{
-    font-size: 16px;
+.info span{/* 推荐商品 店名  文字*/
+    font-size: 15px;
     font-weight: bolder;
 }
-.star-cont{
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-    margin-left: 10px;
-    /* background-color: rgb(213, 67, 67); */
-}
-.star-cont span{
-    font-size:12px;
-}
-.star-cont img{
-    width: 80.5px;
-    height: 16.8px;
-}
-/* .UEditor{
-    float: left;
-    width: 80%;
-    height: 650px;
-    margin-right: 650px;
 
-    background-color: rgb(101, 132, 233);
-} */
+.UEditor{/* 富文本编辑器*/
+    float: left;
+    width: 75%;
+    margin-top: 50px;
+    /* height: 650px; */
+    background-color: rgb(22, 63, 198);
+}
+
+
+  #editor—wrapper {
+    border: 1px solid #ccc;
+    z-index: 100; /* 按需定义 */
+  }
+  #toolbar-container { border-bottom: 1px solid #ccc; }
+  #editor-container { height: 500px; }
+  .editor-content-view {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .editor-content-view p,
+  .editor-content-view li {
+    white-space: pre-wrap; /* 保留空格 */
+  }
+  
+  .editor-content-view blockquote {
+    border-left: 8px solid #d0e5f2;
+    padding: 10px 10px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+  }
+  
+  .editor-content-view code {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  .editor-content-view pre>code {
+    display: block;
+    padding: 10px;
+  }
+  
+  .editor-content-view table {
+    border-collapse: collapse;
+  }
+  .editor-content-view td,
+  .editor-content-view th {
+    border: 1px solid #ccc;
+    min-width: 50px;
+    height: 20px;
+  }
+  .editor-content-view th {
+    background-color: #f1f1f1;
+  }
+  
+  .editor-content-view ul,
+  .editor-content-view ol {
+    padding-left: 20px;
+  }
+  
+  .editor-content-view input[type="checkbox"] {
+    margin-right: 5px;
+  }

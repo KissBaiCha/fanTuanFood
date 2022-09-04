@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="../../css/customer/personal_center/appraise.css">
   <link rel="stylesheet" href="../../layui/css/layui.css">
   <link rel="stylesheet" href="../../css/details/details_header.css">
+  <link href="https://unpkg.com/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+  <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/@wangeditor/editor@latest/dist/index.js"></script>
 </head>
 
 <body>
@@ -78,105 +82,157 @@
           <div class="name">
             <span>猫腻·猫咖·撸猫馆</span>
           </div>
-          <div class="score clear">
-            <img src="../../images/customer/personal_center/star.png" alt="">
-            <span>5分人均￥58</span>
+          <div class="order-aps">
+            <span>猫腻·猫咖·撸猫馆单人餐</span> 
           </div>
-          <div class="address">
-            <p>地址：姑苏区观前街177-179号二楼（察院场地铁二号口直行两百米，海澜之家对面）</p>
-            <p>电话：18013126105</p>
-            <p>营业时间：周一至周日 10:00-22:00</p>
+          <div class="order-score"><!--商品评分-->
+            <div class="score clear">
+              <div class="o-cont" >
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">                          
+                </fieldset>
+                <div id="test8" class="o-star">
+                </div>                
+              </div>
+              <span>5分人均￥58</span>
+            </div>
           </div>
         </div><!-- 商品信息-->
       </div>
-      <div class="layui-col-xs3">
+      <div class=" UEditor">
+        <div id="editor—wrapper">
+          <div id="toolbar-container"><!-- 工具栏 --></div>
+          <div id="editor-container"><!-- 编辑器 --></div>
+      </div>
+      </div>
+      <!-- ============= 获取内容 ===============-->
+<!-- <script>   
+  const html = editor.getHtml();
+  const editor = createEditor({
+  html: '<p>hello <strong>world</strong></p>', 
+ 
+})
+</script> -->
+      
+      <script>      
+        const toolbarConfig = { 
+    /* 工具栏配置 */
+    
+        }
+        import { DomEditor } from '@wangeditor/editor'
+const toolbar = DomEditor.getToolbar(editor)
+
+const curToolbarConfig = toolbar.getConfig()
+console.log( curToolbarConfig.toolbarKeys ) // 当前菜单排序和分组
+toolbarConfig.toolbarKeys = [
+    // 菜单 key
+    'headerSelect',
+
+    // 分割线
+    '|',
+
+    // 菜单 key
+    'bold', 'italic',
+
+    // 菜单组，包含多个菜单
+    {
+        key: 'group-more-style', // 必填，要以 group 开头
+        title: '更多样式', // 必填
+        iconSvg: '<svg>....</svg>', // 可选
+        menuKeys: ["through", "code", "clearStyle"] // 下级菜单 key ，必填
+    },
+    // 继续配置其他菜单...
+]
+toolbarConfig.excludeKeys = [
+    'headerSelect',
+    'italic',
+    'group-more-style' // 排除菜单组，写菜单组 key 的值即可
+]
+toolbarConfig.modalAppendToBody = true
+
+// 创建 toolbar 和 editor
+
+// 可监听 `modalOrPanelShow` 和 `modalOrPanelHide` 自定义事件来设置样式、蒙层
+editor.on('modalOrPanelShow', modalOrPanel => {
+    if (modalOrPanel.type !== 'modal') return
+    const { $elem } = modalOrPanel // modal element
+
+    // 设置 modal 样式（定位、z-index）
+    // 显示蒙层
+})
+editor.on('modalOrPanelHide', () => {
+    // 隐藏蒙层
+})
+        editorConfig.placeholder = '请输入内容...'
+
+
+      </script>
+      
+
+      <div class="layui-col-xs3"><!-- 右栏附件商品推荐区-->
         <div class="recommend">
-          <!-- 右栏附件商品推荐区-->
           <div class="title">
             <span>推荐附件商品</span> 
+          </div> 
+            <ul>
+              <li class="recom"><!--=========== 商品一区 =============-->              
+                      <div class="recom-pic"><!--商品图片-->
+                        <img src="../../images/customer/personal_center/bbq.jpeg" alt="">
+                      </div>
+                      <div class="recom-msg"><!--商品信息-->
+                        <div class="info"><!--商品名称-->
+                          <a href=""><span>韩宫宴炭火烤肉（苏州吴江万宝店）</span>
+                          </a>
+                        </div>
+                        <div class="star-cont" ><!--商品评分-->
+                          <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">                          
+                          </fieldset>
+                          <div id="test9" class="star"></div>
+                          <span> 松陵   人均85</span>
+                        </div>
+                      </div>            
+              </li>
+              <li class="recom"><!--=========== 商品二区 =============-->                
+                <div class="recom-pic"><!--商品图片-->
+                  <img src="../../images/customer/personal_center/bbq02.jpeg" alt="">
+                </div>
+                <div class="recom-msg"><!--商品信息-->
+                  <div class="info"><!--商品名称-->
+                    <a href=""><span>来点烤肉（苏州观前街店）</span>
+                    </a>
+                  </div>
+                  <div class="star-cont" ><!--商品评分-->
+                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">                          
+                    </fieldset>
+                    <div id="test10" class="star"></div>
+                    <span> 观前街   人均68</span>
+                  </div>
+                </div>            
+        </li>
+        <li class="recom"><!--=========== 商品三区 =============-->                
+          <div class="recom-pic"><!--商品图片-->
+            <img src="../../images/customer/personal_center/bbq03.jpeg" alt="">
           </div>
-          <div class="layui-row recom">
-            <!-- 商品一区-->
-            <div class="layui-col-md5">
-              <div class="layui-row grid-demo">
-                <div class="layui-col-md5 ">
-                  <div class="recom-pic">
-                    <img src="../../images/customer/personal_center/bbq.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="layui-col-md7">
-                  <div class="recom-msg">
-                    <div class="info">
-                      <a href=""><span>韩宫宴炭火烤肉（苏州吴江万宝店）</span>
-                      </a>
-                    </div>
-                    <div class="star-cont">
-                      <img src="../../images/customer/personal_center/star.png" alt="">
-                      <span> 松陵   人均85</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="recom-msg"><!--商品信息-->
+            <div class="info"><!--商品名称-->
+              <a href=""><span>原始煮意·地锅鸡（观前直营店）</span>
+              </a>
             </div>
-          </div>
-          <div class="layui-row recom">
-            <!-- 商品二区-->
-            <div class="layui-col-md5">
-              <div class="layui-row grid-demo">
-                <div class="layui-col-md5 ">
-                  <div class="recom-pic">
-                    <img src="../../images/customer/personal_center/bbq02.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="layui-col-md7">
-                  <div class="recom-msg">
-                    <div class="info">
-                      <a href=""><span>来点烤肉（苏州观前街店）</span>
-                      </a>
-                    </div>
-                    <div class="star-cont">
-                      <img src="../../images/customer/personal_center/star.png" alt="">
-                      <span> 观前街   人均68</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="star-cont" ><!--商品评分-->
+              <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">                          
+              </fieldset>
+              <div id="test11" class="star"></div>
+              <span> 观前街   人均64</span>
             </div>
-          </div>
-          <div class="layui-row recom">
-            <!-- 商品三区-->
-            <div class="layui-col-md5">
-              <div class="layui-row grid-demo">
-                <div class="layui-col-md5 ">
-                  <div class="recom-pic">
-                    <img src="../../images/customer/personal_center/bbq03.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="layui-col-md7">
-                  <div class="recom-msg">
-                    <div class="info">
-                      <a href=""><span>原始煮意·地锅鸡（观前直营店）</span>
-                      </a>
-                    </div>
-                    <div class="star-cont">
-                      <img src="../../images/customer/personal_center/star.png" alt="">
-                      <span> 观前街   人均64</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
+          </div>            
+        </li>
+            </ul>
     </div>
-    <div class="layui-row UEditor">
-      <!-- UEditor 富文本编辑框-->
-      <div class="layui-col-xs12">
-        <div class="ditor1">.
-          <!-- UEditor-->
-        </div>
-      </div>
-    </div>
+  </div>
+
+  
     <script src="../../layui/layui.js"></script>
+   
+    <script src="../../customer/personal_center/appraise.js"></script>
 </body>
 
 </html>
