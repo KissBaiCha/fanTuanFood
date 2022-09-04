@@ -7,6 +7,7 @@
     width: 100%;
     height: 400px;
     background-color: #f4f4f4;
+    /* background-color: #c5fd6c; */
     position: relative;
     float: left;
     margin-top: 15px;
@@ -67,6 +68,38 @@
     margin-top: 1px;
     margin-left: 724px;
    
+}
+
+.group_product_msg .collect{
+    width: 70px;
+    height: 27px;
+    /* background-color: coral; */
+    margin-left: 800px;
+    margin-top: -30px;
+}
+
+
+
+.collect .collect-logo{
+    width: 27px;
+    height: 100%;
+    /* background-color: dodgerblue; */
+    cursor: pointer;
+    float: left;
+    
+}
+.collect .collect-logo:hover{
+    background-image: url("../../images/details/groupbuy/collect-logo-after.svg");
+}
+
+.collect .lollect-text{
+    display: block;
+    float: left;
+    padding-left: 3px;
+    font-size: 16px;
+    padding-top: 5px;
+
+
 }
 
 .group_product_msg .startGroupBuy{
