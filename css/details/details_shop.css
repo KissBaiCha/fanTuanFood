@@ -102,7 +102,7 @@ body{
     display: block;
     width: 25px;
     height: 25px;
-    margin: 20px ;
+    margin-top: 20px ;
     float: right;
 }
 .shop-info .collect i{
@@ -113,6 +113,13 @@ body{
 }
 .shop-info .collect:hover i{
     background-image:url(../../images/details/collect-b.png);
+}
+.shop-info .collect-info{
+    display: block;
+    width: 45px;
+    margin: 23px 10px 0 5px;
+    text-align: center;
+    float: right;
 }
 /* 优惠促销 */
 .set-meal h1{

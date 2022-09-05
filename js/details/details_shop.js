@@ -4,8 +4,17 @@ document.querySelector(".dingwei").onclick=function(){
     document.querySelector(".cover").style.display = "block";
     document.querySelector(".cover").style.height = screen.height +'px';
 }
+var onclicktime = 0;
 document.querySelector(".collect").onclick=function(){
-    document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/collect-c.png)";
+    if(onclicktime % 2 == 0){
+        document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/collect-c.png)";
+        document.querySelector(".collect-info").innerText = "已收藏";
+    }
+    if(onclicktime % 2 == 1){
+        document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/collect-a.png)";
+        document.querySelector(".collect-info").innerText = "收藏";
+    }
+    onclicktime++;
 }
 // 店铺轮播图
 layui.use(['carousel', 'form'], function () {
