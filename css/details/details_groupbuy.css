@@ -129,14 +129,39 @@
     float: left;
     margin-top: 20px;
 }
+
 .pintuan .group1,.group2{
     width: 840px;
     height: 80px;
-    background-color: bisque;
+    /* background-color: bisque; */
     margin-top: 10px;
     margin-left: 18px;
 }
 
+.group1 img,.group2 img{
+    width: 65px;
+    height: 65px;
+    background-color: #a66cfd;
+    margin-left: 10px;
+    margin-top: 7px;
+    float: left;
+}
+
+.group1 .btn-pintuan,.group2 .btn-pintuan{
+    display: block;
+    width: 100px;
+    height: 65px;
+    background-color: #a66cfd;
+    float: left;
+    margin-top: 7px;
+    margin-left: 450px;
+    border-radius: 10px;
+    border-width: 0;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
 
 
 /* --------------------------团购详情、购买须知---------------------------------------- */
