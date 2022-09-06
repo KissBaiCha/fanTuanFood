@@ -246,7 +246,7 @@ body{
     background-color: #FFF;
  }
  .prolist .paging #demo7{
-    margin-left: 38.5px;
+    margin-left: 25%;
     padding-top: 25px;
  }
  .layui-laypage .layui-laypage-curr .layui-laypage-em{
@@ -286,15 +286,10 @@ body{
     font-size: 13px;
     color: rgb(0, 0, 0);
 }
-.recommend li h6 a{
+.recommend li h6 {
     text-decoration: none;
     line-height: 20px;
     color: rgb(0, 0, 0);
-}
-.recommend li span a{
-    text-decoration: none;
-    line-height: 20px;
-    color: rgba(100, 95, 95, 0.464);
 }
 .recommend li span{
     height: 20px;
@@ -303,7 +298,7 @@ body{
     display: block;
     margin: 0 8%;
     font-size: 12px;
-    color: #666464;
+    color: rgba(100, 95, 95, 0.464);
     float: left;
 }
 .recommend li span label{
