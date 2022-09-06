@@ -133,7 +133,7 @@
 .pintuan .group1,.group2{
     width: 840px;
     height: 80px;
-    /* background-color: bisque; */
+    background-color: bisque;
     margin-top: 10px;
     margin-left: 18px;
 }
@@ -149,12 +149,12 @@
 
 .group1 .btn-pintuan,.group2 .btn-pintuan{
     display: block;
-    width: 100px;
-    height: 65px;
+    width: 85px;
+    height: 55px;
     background-color: #a66cfd;
     float: left;
-    margin-top: 7px;
-    margin-left: 450px;
+    margin-top: 11px;
+    margin-left: 460px;
     border-radius: 10px;
     border-width: 0;
     color: white;
