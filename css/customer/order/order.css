@@ -25,7 +25,7 @@
 .pro-msg{/*订单信息*/
     width: 100%;
     height: 180px;
-    background-color: rgb(41, 244, 255);
+
 }
 .shop-pic .spic{/*订单图片*/
     width: 90%;
@@ -37,19 +37,19 @@
     height: auto;
     text-align: center;
     margin-top: 80px;
-    background-color: rgb(229, 89, 245);
+
 }
 .pro-btn ,.number-price ,.sum-price{/*按钮 数量 与 总价*/
     width: 100px;
     height: 180px;
-    background-color: rgb(72, 240, 21);
+
 }
 .btn ,.num , .sum{
     width: 100%;
     height: 30px;
     margin-top: 80px;
     float: left;
-    background-color: rgb(34, 132, 236);
+
 }
 .grid-demo{
     width: 100px;
@@ -74,7 +74,7 @@
     width: 100%;
     height: 220px;
     border-bottom: 1px solid gray;
-    background-color: rgb(25, 83, 243);
+
 }
 
 .settlement{/*结算区*/

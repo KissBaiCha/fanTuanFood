@@ -20,7 +20,7 @@
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 0 20px 10px  rgb(229, 174, 247) ;
-    background-color: rgb(61, 247, 238);
+
 }
 .name{/*商品名字*/
     width: 300px;
@@ -28,7 +28,7 @@
     margin-left: 20px;
     margin-top: 20px;
     border-bottom: 1px solid gray;
-    background-color: rgb(76, 241, 58);
+
 }
 .name span{
     font-size: 26px;
@@ -42,7 +42,7 @@
 .o-cont{/*星星区*/
     width: 120px;
     height: 30px;
-    background-color: rgb(149, 222, 13);
+
 }
 .o-star{/*星星*/
     width: 200px;
@@ -56,7 +56,7 @@
     height: 20px;
     margin-left: 130px;
     margin-top: -25px;
-    background-color: rgb(13, 39, 231);
+
 }
 .score span{/*商品人均消费区 文字*/
     font-size: 14px;
@@ -65,7 +65,7 @@
 .order-aps{/*下单商品名称区*/
     margin-left: 20px;
     margin-top: 20px;
-    background-color: rgb(230, 25, 216);
+
 }
 .order-aps span{/*下单商品名称区 文字*/
     font-size: 16px;
@@ -75,7 +75,7 @@
     margin-top: 10px;
     margin-left: 20px;
     border-bottom: 1px solid gray;
-    background-color: rgb(226, 73, 73);
+
 }
 .recommend{/*附近推荐区*/
     width: 90%;
@@ -83,14 +83,14 @@
     margin-top: -200px;
     float: left;
     box-shadow:  0 0 10px 1px rgb(181, 179, 179);
-    background-color: rgb(241, 73, 73);
+
 }
 .title{/*附近推荐 标题区*/
     width: 240px;
     height: 40px;
     margin-top:10px;
     margin-left: 10px;
-    background-color: rgb(238, 238, 60);
+
 }
 .title span{/*附近推荐 标题区 文字*/
     font-weight: bolder;
@@ -101,8 +101,8 @@
     width:100%;
     height: 280px;   
     margin-bottom: 20px;
-    border: 1px solid #a66cfd;
-    background-color: rgb(94, 62, 238);
+
+
 }
 .recom-pic {
     margin-left: 20px;
@@ -110,12 +110,12 @@
 }
 .recom-msg{/* 推荐商品 店名、评分、人均消费 信息区*/
     width: 100%;
-    background-color: rgb(17, 236, 21);
+
 }
 .info{/* 推荐商品 店名*/
     width: 90%;
     float: left;
-    background-color: rgb(230, 53, 53);
+
 }
 .info span{/* 推荐商品 店名  文字*/
     font-size: 15px;
@@ -127,7 +127,7 @@
     width: 75%;
     margin-top: 50px;
     /* height: 650px; */
-    background-color: rgb(22, 63, 198);
+
 }
 
 
