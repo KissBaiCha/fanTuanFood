@@ -1,0 +1,57 @@
+.layui-main .my_msg{
+    width: 780px;
+    height: 600px;
+    background-color: antiquewhite;
+    float: left;
+    margin-left:100px;
+}
+
+.my_msg .msg,.my_msg .name,.msg,.my_msg .head_img,.my_msg .birthday,.my_msg .updatePhone{
+    width: 100%;
+    height:80px;
+    background-color: aqua;
+    float: left;
+    margin-top: 10px;
+}
+
+.msg .person{
+    font-size: 18px;
+    display: block;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.msg .account{
+    font-size: 15px;
+    color: grey;
+    display: block;
+    margin-left: 122px;
+    margin-top: 5px;
+}
+/* .my_msg .head_img,.my_msg .birthday,.my_msg .updatePhone{
+    margin-top: 10px;
+} */
+
+.head_img .touxiang,.name .nicheng,.my_msg .shengri,.my_msg .shoujihao{
+    width: 80px;
+    height: 100%;
+    font-size: 18px;
+    display: block;
+    margin-left: 120px;
+    line-height: 80px;
+    /* background-color: beige; */
+    float: left;
+
+}
+
+.my_msg .name .nichengkuang{
+    width: 400px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+    margin-left: 5px;
+    border: none;
+    padding-left: 20px;
+   
+}
+
