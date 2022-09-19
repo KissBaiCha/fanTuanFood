@@ -8,7 +8,7 @@
     <link rel="icon" href="../../images/minilogo.png">
     <link rel="stylesheet" href="../../layui/css/layui.css">
     <link rel="stylesheet" href="../../css/mine/myfantuan.css">
-    <link rel="stylesheet" href="../../css/mine/mymsg.css">
+    <link rel="stylesheet" href="../../css/mine/my_fantuan.css">
     <link rel="stylesheet" href="../../css/details/details_bottom.css">
     <link rel="stylesheet" href="../../css/details/details_header.css">
 </head>
@@ -64,15 +64,30 @@
 
         <!-- --------------我的饭团 左侧栏------------------------ -->
         <div class="orders-container">
-          <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
-           <li class="layui-nav-item "><a href="../../customer/personal_center/myfantuan.html">我的饭团</a></li>
-           <li class="layui-nav-item"><a href="../../customer/personal_center/myorder.html">我的订单</a></li>
-           <li class="layui-nav-item"><a href="../../customer/personal_center/allorder.html">全部订单</a></li>
-           <li class="layui-nav-item"><a href="../../customer/personal_center/order_wait_pay.html">待付款</a></li>
-           <li class="layui-nav-item"><a href="../../customer/personal_center/order_wait_judge.html">待评价</a></li>
-           <li class="layui-nav-item"><a href="../../customer/personal_center/all_quan.html">抵用券</a></li>
-           <li class="layui-nav-item"><a href="../../customer/personal_center/can_use_quan.html">可用券</a></li>
-          </ul>
+    
+            <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <li class="layui-nav-item"><a href="../personal_center/myfantuan.html">我的饭团</a></li>
+                
+                </li>
+                <li class="layui-nav-item">
+                <a href="javascript:;">订单</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="../personal_center/allorder.html" >全部订单</a></dd>
+                    <dd><a href="../personal_center/myorder.html">我的订单</a></dd>
+                    <dd><a href="../personal_center/order_wait_pay.html">待付款</a></dd>
+                    <dd><a href="../personal_center/order_wait_judge.html">待评论</a></dd>  
+                </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">我的优惠券</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="../personal_center/all_quan.html">可用券</a></dd>
+                        <dd><a href="../personal_center/can't_use_quan.html">失效券</a></dd>
+                    </dl>
+                    </li>
+                <li class="layui-nav-item"><a href="../personal_center/user_msg.html">个人信息</a></li>
+            </ul>
 
     
         <!-- -----------------orders-body-------------------- -->
@@ -110,13 +125,23 @@
     </div>
 
         <!-- -----------------------stop------------------------------- -->
-        <script src="../layui/layui.js"></script>
+        <script src="../../layui/layui.js"></script>
         <script src="../js/mine/myfantuan.js"></script>
 
-
-
-        
      
     </div>
+
+
+    <script>
+        layui.use('element', function(){
+          var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+          
+          //导航点击事件
+          element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text());
+          });
+        });
+        </script>
 </body>
 </html>
