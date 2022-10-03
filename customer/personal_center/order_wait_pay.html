@@ -8,7 +8,7 @@
     <link rel="icon" href="../../images/minilogo.png">
     <link rel="stylesheet" href="../../layui/css/layui.css">
     <link rel="stylesheet" href="../../css/mine/myfantuan.css">
-    <link rel="stylesheet" href="../../css/mine/my_fantuan.css">
+    <link rel="stylesheet" href="../../css/mine/order.css">
     <link rel="stylesheet" href="../../css/details/details_bottom.css">
     <link rel="stylesheet" href="../../css/details/details_header.css">
 </head>
@@ -73,10 +73,10 @@
                 <li class="layui-nav-item">
                 <a href="javascript:;">订单</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="../personal_center/allorder.html" >全部订单</a></dd>
+                    <dd><a href="../personal_center/allorder.html">全部订单</a></dd>
                     <dd><a href="../personal_center/myorder.html">我的订单</a></dd>
                     <dd><a href="../personal_center/order_wait_pay.html">待付款</a></dd>
-                    <dd><a href="../personal_center/order_wait_judge.html">待评论</a></dd>  
+                    <dd><a href="../personal_center/order_wait_judge.html">待评论</a></dd>
                 </dl>
                 </li>
                 <li class="layui-nav-item">
@@ -91,12 +91,45 @@
 
     
         <!-- -----------------orders-body-------------------- -->
-        <div class="welcome">
-            <span class="wel_text">欢迎使用饭团 祝您用餐愉快</span>
 
-        </div>
 
-        <!-- -------------------------信息修改模块-------------------------------- -->
+        <div class="orders-body">
+            <ul>
+                <li>
+                    <div class="product_img">
+                        <a href="">
+                            <img src="../../images/details/groupbuy/lunbo1.jfif"/>
+                        </a>
+                    </div>
+                    <div class="product_msg">
+                        <span class="product_title">和牛畅吃套餐</span>
+                        <span class="text_time">下单时间:</span>
+                         <span class="time">2022-09-09 12:22</span>
+                        <span class="text_number">数量:</span>
+                        <span class="number">1</span>
+                    </div>
+
+
+                    <div class="sum_price">
+                        <span class="text_price">需支付:￥</span>
+                        <span class="price">216</span>
+                    </div>
+
+                    <div class="zhuangtai">
+                        <span>待付款</span>
+                    </div>
+
+                    <div class="other">
+                       <a href="../pay/order_pay.html">去付款</a>
+                    </div>
+                    
+                </li>
+
+
+            </ul>
+          </div>
+      </div>
+
 
           
 
@@ -128,9 +161,8 @@
         <script src="../../layui/layui.js"></script>
         <script src="../js/mine/myfantuan.js"></script>
 
-     
-    </div>
 
+    </div>
 
     <script>
         layui.use('element', function(){
