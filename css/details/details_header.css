@@ -21,12 +21,10 @@
 }
 .header .top-main .layui-nav {
     position: relative;
-    /* padding: 0 50px; */
     font-size: 0;
     box-sizing: border-box;
     border-radius: 25px;
     background-color: #f6f6f6;
-
 }
 .header .layui-nav .layui-nav-item {
     position: relative;
@@ -40,7 +38,7 @@
     display: none;
     position: absolute;
     left: 0;
-    top:30px;
+    top:33px;
     min-width: 100%;
     line-height: 36px;
     padding: 5px 0;
@@ -77,7 +75,7 @@
     margin-left: 20px;
     margin-top: 25px;
 }
-.search-btn{
+.header .search-btn{
     margin: 3px 0 0 5px;
     background-color:rgb(255,107,55) ;
     border: 1px solid rgb(255,107,55);
