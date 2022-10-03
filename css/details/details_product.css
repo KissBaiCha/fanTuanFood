@@ -1,3 +1,7 @@
+.html{
+    background-color: #f6f6f6;
+}
+
 .main{
 
 }
@@ -7,22 +11,22 @@ ul{
 .mybtn{
     display: block;
     color: white;
-    background-color: #a66cfd!important;
-    border: #a66cfd!important;
+    background-color: rgb(255,107,55)!important;
+    border: rgb(255,107,55)!important;
 }
 /*选项卡颜色*/
 .layui-tab-brief>.layui-tab-title .layui-this {
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .layui-tab-brief>.layui-tab-title .layui-this:after {
     border: none;
     border-radius: 0;
-    border-bottom: 2px solid #a66cfd;
+    border-bottom: 2px solid rgb(255,107,55);
 }
 /*星星颜色*/
 .layui-rate li i.layui-icon {
     font-size: 20px;
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 /*灰色面包屑*/
 .detail-shop-dish .dish-nav{
@@ -32,7 +36,7 @@ ul{
     padding-left: 20px;
 }
 .layui-breadcrumb a:hover{
-    color: #a66cfd!important;
+    color: rgb(255,107,55)!important;
 }
 /*商品信息主体*/
 .dish-details{
@@ -128,7 +132,7 @@ ul{
     height: 50%;
 }
 #people-one-price,.people-one-price i{
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 /*商店名*/
 .shop-info-tip .shop-info-head a{
@@ -137,7 +141,7 @@ ul{
     font-size: 20px;
 }
 .shop-info-tip .shop-info-head a:hover{
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .shop-info-head-name{
     display: block;
@@ -275,7 +279,7 @@ ul{
     margin-top: 5px;
 }
 .comment-img-item:hover{
-    border: 1px solid #a66cfd;
+    border: 1px solid rgb(255,107,55);
 }
 /*点赞*/
 .comment-perfect{
