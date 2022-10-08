@@ -54,7 +54,7 @@
     transform: skewX(-45deg);
     border: 1px solid gray;
     margin-left: 10px;
-    background-color: #a66cfd;
+    background-color: rgb(255,107,55);
     /* background: rgb(176, 216, 18); */
 }
 .but{/*即将开始按钮*/
