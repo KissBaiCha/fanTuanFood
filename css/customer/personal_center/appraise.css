@@ -19,7 +19,7 @@
     margin-top: 20px;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 0 20px 10px  rgb(229, 174, 247) ;
+    box-shadow: 0 0 20px 1px  gray ;
 
 }
 .name{/*商品名字*/
