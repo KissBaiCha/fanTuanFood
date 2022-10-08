@@ -29,13 +29,13 @@ layui.use(['carousel', 'form'], function () {
 })
 // 店铺地图定位
 var map = new AMap.Map('container', {
-    zoom:20, //初始化地图层级
+    zoom:18, //初始化地图层级
     center: [120.693277,31.297477] //初始化地图中心点
 });
 // 定位图标
 var marker = new AMap.Marker({ 
     map: map,
     position: [120.693277, 31.297477],
-    icon: '../images/map-location-icon.png' ,
+    icon: '../images/map-location-icon.svg' ,
     offset: new AMap.Pixel(-13, -30)
 });
