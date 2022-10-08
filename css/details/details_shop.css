@@ -73,7 +73,7 @@ body{
 .shop-info .score label{
     font-size: 16px;
     font-weight: bold;
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .shop-info p{
     font-size: 14px;
@@ -140,7 +140,7 @@ body{
     float: left;
 }
 .set-meal .set-meal-list li:hover{
-    border: 1px solid #a66cfd;
+    border: 1px solid rgb(255,107,55);
 }
 .set-meal .set-meal-list li a:hover{
     color: #333;
@@ -168,7 +168,7 @@ body{
 }
 .set-meal .set-meal-list li .now-price span{
     font-size: 24px;
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .set-meal .set-meal-list li .had-sell{
     margin-left: 50px;
@@ -181,7 +181,7 @@ body{
     line-height: 25px;
     margin: 10px 15px 0 0;
     color: #fff;
-    background-color: #a66cfd;
+    background-color: rgb(255,107,55);
     float: right;
 }
 /* 推荐菜 */
@@ -224,14 +224,14 @@ body{
 
 /* 全部菜品 */
 .layui-tab-brief>.layui-tab-title .layui-this{
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .layui-tab-brief>.layui-tab-title li{
     font-size: 16px;
     font-weight: bold;
 }
 .layui-tab-brief>.layui-tab-title .layui-this:after{
-    border-bottom: 2px solid #a66cfd;
+    border-bottom: 2px solid rgb(255,107,55);
 }
 .dishesli-ads li{
     width: 118px;
@@ -246,7 +246,7 @@ body{
     height: 94.4px;
 }
 .dishesli-ads li:hover{
-    border: 1px solid #a66cfd;
+    border: 1px solid rgb(255,107,55);
 }
 .dishesli-ads li a:hover{
     color: #333;

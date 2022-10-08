@@ -48,64 +48,7 @@ body{
     margin-top: 12px;
 }
 /*布局end*/
-/*=========================头部===============================*/
-/* .header .logo{
-    width: 220px;
-    height: 100%;
-    margin-top: 15px;
-    float: left;
-}
-.header .logo img{
-    margin: 20px;
-    width: 200px;
-    height: 75px;
-}
-.header .sel_All{
-    width: 650px;
-    height: 100%;
-    float: left;
-}
-.header .sel_All input{
-    width: 380px;
-    height: 14px;
-    padding: 9px;
-    border: 2px solid #a66cfd;
-    outline: 0;
-    margin: 57px 0 0 55px;
-    float: left;
-}
-.header .sel_All button{
-    display: block;
-    margin: 57px 0 0 15px;
-    height: 36px;
-    width: 100px;
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    background-color: #a66cfd;
-    border: 2px solid #a66cfd;
-    float: left;
-}
 
-.header .user_inf{
-    width: 284px;
-    height: 100%;
-    float: left;
-}
-.header .user_inf a{
-    margin: 54px 0 0 28px;
-    width: 100px;
-    height: 36px;
-    text-align: center;
-    line-height: 36px;
-    text-decoration: none;
-    background-color: #a66cfd;
-    border: 2px solid #a66cfd;
-    color: #fff;
-    font-size: 16px;
-    float: left;
-} */
 /*=========================筛选===============================*/
 .fifter .Condition{
     width: 95%;
@@ -153,7 +96,7 @@ body{
     padding: 3px 10px;
     border-radius: 20px;
     color: rgb(255, 255, 255);
-    background-color: #a66cfd;
+    background-color: rgb(255,107,55);
 }
 
 /*========================商品列表===============================*/
@@ -179,7 +122,7 @@ body{
     margin-left: 10px;
 }
 .prolist .sort a:hover{
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .prolist .pro{
     width: 100%;
@@ -227,7 +170,7 @@ body{
     background-repeat: no-repeat;
 }
 .prolist .pro .comment span{
-    color: #a66cfd;
+    color: rgb(255,107,55);
 }
 .prolist .pro li span{
     font-size: 12px;
@@ -250,10 +193,10 @@ body{
     padding-top: 25px;
  }
  .layui-laypage .layui-laypage-curr .layui-laypage-em{
-    background-color: #a66cfd;
+    background-color: rgb(255,107,55);
  }
  .layui-laypage-default a:hover {
-    color:#a66cfd;
+    color:rgb(255,107,55);
  }
 /*========================推荐===============================*/
 .recommend li{
@@ -317,7 +260,7 @@ body{
     text-align: center;
     line-height: 30px;
     color: white;
-    background-color: #a66cfd;
+    background-color: rgb(230, 67, 71);
 }
 
 
