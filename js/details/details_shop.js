@@ -7,11 +7,11 @@ document.querySelector(".dingwei").onclick=function(){
 var onclicktime = 0;
 document.querySelector(".collect").onclick=function(){
     if(onclicktime % 2 == 0){
-        document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/collect-c.png)";
+        document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/shop-collect-after.svg)";
         document.querySelector(".collect-info").innerText = "已收藏";
     }
     if(onclicktime % 2 == 1){
-        document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/collect-a.png)";
+        document.querySelector(".collect").firstChild.style.backgroundImage = "url(../images/details/shop-collect-before.svg)";
         document.querySelector(".collect-info").innerText = "收藏";
     }
     onclicktime++;
