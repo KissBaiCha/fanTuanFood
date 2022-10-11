@@ -1,0 +1,19 @@
+body,html{
+   width: 1536px ;
+    height: 658px;
+    background-color: rgb(236, 145, 26);
+    
+}
+
+.main{
+    width: 100% !important;
+    height: 100% !important;
+   
+   
+}
+.layui-carousel{
+    width: 100% !important;
+    height: 100% !important;
+    
+
+}
