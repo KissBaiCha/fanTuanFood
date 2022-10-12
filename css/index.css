@@ -163,10 +163,10 @@ body{
 }
 .prolist .pro li label i{
     display: inline-block;
-    height: 13px;
+    height: 14px;
     width: 16px;
     bottom: 0;
-    background-image: url(../images/index-soucang.png);
+    background-image: url(../images/index-wellreceived-icon.svg);
     background-repeat: no-repeat;
 }
 .prolist .pro .comment span{
