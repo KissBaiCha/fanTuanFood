@@ -14,23 +14,48 @@
 
 
 <div class="main">
+
+  
+<ul class="layui-nav">
+  <li class="layui-nav-item layui-this"><a href="">选中</a></li>
+  <li class="layui-nav-item">
+    <a href="javascript:;">常规</a>
+  </li>
+  <li class="layui-nav-item"><a href="">导航</a></li>
+  <li class="layui-nav-item"><a href="">导航</a></li>
+
+ 
+</ul>
+
 <div class="layui-carousel" id="test1" lay-filter="test1">
-  <div carousel-item="" class="lunbo_img">
+
+  <div carousel-item="">
     <div>
-      <img src="images/food.png">
+      <img src="images/food1.png">
     </div>
     <div>
-      <img src="">
+      <img src="images/food1.png">
     </div>
     <div>
-      <img src="">
+      <img src="images/food1.png">
     </div>
     <div>
-      <img src="">
+      <img src="images/food1.png">
     </div>
   </div>
+
+  <!-- <div class="index_submit">
+    <a href="index.html" class="cover_index">
+      <input type="submit" class="btn_cover" value="我的饭团" >
+    </a>
+  
+  </div> -->
+  
+  </div>
+
 </div> 
-</div>
+
+
   
 <script src="layui/layui.js"></script>
 </body>
@@ -49,3 +74,16 @@ layui.use(['carousel', 'form'], function(){
     });
 
     </script>
+
+    
+<script>
+  layui.use('element', function(){
+    var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    
+    //导航点击事件
+    element.on('nav(demo)', function(elem){
+      //console.log(elem)
+      layer.msg(elem.text());
+    });
+  });
+  </script>
