@@ -76,12 +76,12 @@
       </div>
       <div class="layui-col-xs2 pro-row-price">
         <div class="pro-pricename">
-          <p>单价</p>
+          <p>数量</p>
         </div>
       </div>
       <div class="layui-col-xs2 pro-row-number">
         <div class="pro-numname">
-          <p>数量</p>
+          <p>单价</p>
         </div>
       </div>
       <div class="layui-col-xs2 pro-row-sum">
@@ -111,9 +111,9 @@
       <div class="layui-col-xs2 ">
         <div class="pro-btn">
           <div class="btn">
-          <a href="javascript:void(0)" class="count-symbol subtraction">-</a>
+          <!-- <a href="javascript:void(0)" class="count-symbol subtraction">-</a> -->
           <input type="text" class="count" value="1" readonly>
-          <a href="javascript:void(0)" class="count-symbol addBtn">+</a>
+          <!-- <a href="javascript:void(0)" class="count-symbol addBtn">+</a> -->
           </div>
         </div>
       </div>
@@ -138,7 +138,8 @@
   <div class="settlement">
     <div class="layui-row">
       <div class="layui-col-xs6">
-        <div class="grid-demo grid-demo-bg1"></div>
+        <div class="grid-demo grid-demo-bg1">
+        </div>
       </div>
       <div class="layui-col-xs2">
         <div class="grid-demo"></div>
@@ -147,12 +148,29 @@
         <div class="grid-demo grid-demo-bg1"></div>
       </div>
       <div class="layui-col-xs3">
-        <div class="set-but">
-          <span>应付金额：</span>
+        <div class="statistic">
+          <span class="price-tit">总商品金额：</span>
+        <em class="price" >￥66.00</em>
         </div>
-        <div class="but-m">
-          <span>￥58</span>
+        <div class="price-panel">
+          <span class="m-price">
+          <button class="layui-btn" id="demo1">
+            使用优惠券
+            <i class="layui-icon layui-icon-down layui-font-12">
+            </i>
+          </button>
+          </span>
+        <em class="n-price" >-￥50.00</em>
         </div>
+        <div class="price-info"> 
+          <div class="set-but">
+            <span>应付金额：</span>
+          </div>
+          <div class="but-m">
+            <span>￥58</span>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -164,13 +182,14 @@
       </div>
       <div class="layui-col-xs3">
         <div class="sub-but">
-          <button type="button" class="but">提交订单</button>
+          <button  class="but">提交订单</button>
         </div>
       </div>
     </div>
   </div>
 
   <script src="../../layui/layui.js"></script>
+  <script src="../../js/customer/order/order.js"></script>
 </body>
 
 </html>
