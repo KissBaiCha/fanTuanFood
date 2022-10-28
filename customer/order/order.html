@@ -6,9 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>下单页面</title>
-  <link rel="stylesheet" href="../../layui/css/layui.css">
+  <link rel="icon" href="../../images/minilogo.png">
+  <link rel="stylesheet" href="../../css/mine/myfantuan.css">
+  <link rel="stylesheet" href="../../css/details/details_bottom.css">
   <link rel="stylesheet" href="../../css/customer/order/order.css">
   <link rel="stylesheet" href="../../css/details/details_header.css">
+  <link rel="stylesheet" href="../../layui/css/layui.css">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+          
+  <script>
+  $(document).ready(function(){
+    $(".coupon").hide();
+    $(".coupon-btn").click(function(){
+      $(".coupon").toggle();
+    });
+  });
+  </script>
 </head>
 
 <body>
@@ -137,42 +150,44 @@
   <!--=======  结算区  ======-->
   <div class="settlement">
     <div class="layui-row">
-      <div class="layui-col-xs6">
-        <div class="grid-demo grid-demo-bg1">
+      <div class="layui-col-xs9">
+        <div class="coupon1">
+          <button class="coupon-btn">使用优惠券 ⇩</button>
+            <div class="layui-row coupon">
+              <div class="coupon-one">
+                <input type="radio" name="coupon" value="新用户8折券" />
+                <span>新用户8折券</span><span>汉堡店的XXXXXX用户体验券</span>
+              </div>
+              <div class="coupon-two">
+                <input type="radio" name="coupon" value="满100减10" />
+                <span>新用户8折券</span><span>汉堡店的XXXXXX用户体验券</span>
+              </div>
+              <div class="coupon-three">
+                <input type="radio" name="coupon" value="新用户9折券" />
+                <span>新用户8折券</span><span>汉堡店的XXXXXX用户体验券</span>
+              </div>
+            </div>              
         </div>
       </div>
-      <div class="layui-col-xs2">
-        <div class="grid-demo"></div>
+    <div class="layui-col-xs3">
+      <div class="statistic">
+        <span class="price-tit">总商品金额：</span>
+          <em class="price" >￥66.00</em>
       </div>
-      <div class="layui-col-xs1">
-        <div class="grid-demo grid-demo-bg1"></div>
+      <div class="price-panel">
+        <span class="m-price">使用优惠券：</span>
+      <em class="n-price" >-￥50.00</em>
       </div>
-      <div class="layui-col-xs3">
-        <div class="statistic">
-          <span class="price-tit">总商品金额：</span>
-        <em class="price" >￥66.00</em>
+      <div class="price-info"> 
+        <div class="set-but">
+          <span>应付金额：</span>
         </div>
-        <div class="price-panel">
-          <span class="m-price">
-          <button class="layui-btn" id="demo1">
-            使用优惠券
-            <i class="layui-icon layui-icon-down layui-font-12">
-            </i>
-          </button>
-          </span>
-        <em class="n-price" >-￥50.00</em>
+        <div class="but-m">
+          <span>￥58</span>
         </div>
-        <div class="price-info"> 
-          <div class="set-but">
-            <span>应付金额：</span>
-          </div>
-          <div class="but-m">
-            <span>￥58</span>
-          </div>
-        </div>
-        
-      </div>
+      </div>        
     </div>
+  </div>
   </div>
   <!--=======  提交订单区  ======-->
   <div class="Submit-order">

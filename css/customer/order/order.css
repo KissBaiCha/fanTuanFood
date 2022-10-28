@@ -6,7 +6,7 @@
 .product{/*商品名称区*/
     width: 100%;
     height: 40px;
-    margin-top: 70px;
+    margin-top: 10px;
     /* border-radius: 10px; */
     border: 1px solid #e0e0e0;
     background-color: #f9f9f9
@@ -28,6 +28,10 @@
     width: 100%;
     height: 180px;
 
+}
+.pro-shop{
+    display: block;
+    margin-top:-20px;
 }
 .shop-pic .spic{/*订单图片*/
     width: 90%;
@@ -76,46 +80,93 @@
 }
 .Pro-details{/*商品详情信息区*/
     width: 100%;
-    height: 220px;
+    height: 160px;
     border-bottom: 1px solid gray;
+
+}
+.coupon-btn{/*优惠券按钮*/
+    color: #f4f4f4;
+    /* display: inline-block; */
+    /* position: relative; */
+    z-index: 1;
+    padding-right: 33px;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 30px;
+    border: 1px solid rgb(255,107,55);
+    border-radius: 3px;
+    background-color: rgb(255,107,55);
 
 }
 
 .settlement{/*结算区*/
     width: 100%;
-    height: 170px;
-    margin-top: 30px;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-    /* background-color: rgb(166, 59, 243); */
+    height: 50px;
+    margin-top: 10px;
+    /* background-color: rgb(179, 165, 189); */
 }
 .statistic {/*  总商品金额div */
     display: block;
     float: left;
-    margin-top: 40px;
+    margin-top:60px;
     /* background-color: rgb(113, 226, 42); */
 }
-.price-panel{/*优惠券div*/
-    display: block;
-    float: left;
-    margin-top: 5px;
-    /* background-color: rgb(43, 167, 220); */
+.coupon1{
+    height:100px;
+    width: 400px;
+    /* background-color: rgb(25, 175, 208); */
 }
+.coupon{
+    height: 200px;
+    /* background-color: rgb(223, 228, 59); */
+}
+.coupon-one{
+    width: 300px;
+    height: 40px;
+    display: block;
+    padding-top: 20px;
 
+    border-color: rgb(255,107,55);
+    border-width: 2px;
+    background-color: #f4f4f4;
+}
+.coupon-two{
+    width: 300px;
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-color: rgb(255,107,55);
+    border-width: 2px;
+    background-color: #f4f4f4;
+}
+.coupon-three{
+    width: 300px;
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-color: rgb(255,107,55);
+    border-width: 2px;
+    background-color: #f4f4f4;
+}
 .price-tit{/*  总商品金额： */
     float: left;
     background-color: rgba(255, 255, 255, 0.44);
-    margin-left: 130px;
+    margin-left: 80px;
     display: block;
     width: 100px;
 }
 .m-price{/*优惠券*/
     float: left;
     background-color: rgba(255, 255, 255, 0.44);
-    margin-left: 130px;
+    margin-left: 80px;
     display: block;
     width: 100px;
 }
+
 .statistic ,.price-panel span{
     color: #888;
 }
@@ -128,13 +179,13 @@
 .n-price{/*-50 */
     display: block;
     float: left;
-    /* margin-left: 130px; */
+    margin-left: 60px;
     /* background-color: rgb(210, 32, 32); */
 }
 .price{/*  66： */
     display: block;
     float: left;
-    /* margin-left: 130px; */
+    margin-left:60px;
     /* background-color: rgb(210, 32, 32); */
 }
 .price-info{
@@ -178,24 +229,26 @@
 }
  .price {
     color: #333;
-    float: left;
+  
     /* width: 100px; */
     text-align: right;
     font-family: verdana;
 }
 .Submit-order{/*提交订单按钮大区*/
+    display: block;
     width: 100%;
     height: 50px;
-    margin-top: 20px;
-    margin-bottom: 100px;
+     margin-top: 20px; 
+    /* margin-bottom: 100px; */
     background-color: #f4f4f4
 }
 .sub-but{/*提交订单按钮*/
+    display: block;
     width: 140px;
     height: 50px;
     text-align: center;
     margin-left: 130px;
-    background-color: rgb(94, 99, 238);
+    /* background-color: rgb(94, 99, 238); */
 }
 .but {
     width: 120px;
