@@ -111,6 +111,10 @@
     margin-top:60px;
     /* background-color: rgb(113, 226, 42); */
 }
+.word span,em{
+    font-size: 12px;
+    font-weight: 700;
+}
 .coupon1{
     height:100px;
     width: 400px;
